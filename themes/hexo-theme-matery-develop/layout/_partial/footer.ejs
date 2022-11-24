@@ -1,0 +1,59 @@
+<footer class="page-footer bg-color">
+    <% if (theme.music.enable && theme.music.fixed) { %>
+        <%- partial('_widget/music') %>
+    <% } %>
+
+    <div class="container row"
+         style="margin-bottom: <% if (theme.time.enable) { %>15<% } else { %>0<% } %>px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            
+            <div class="col s12 m8 l8" style="margin-left: 0px;">
+                <img src="/medias/logo.png" class="logo-img" alt="LOGO" height="80px">
+                <p style="font-size: 20px;"><strong>Contact Info</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m8 l8 copy-right center-align">
+            Copyright&nbsp;&copy;
+            <% if (theme.time.year !== new Date().getFullYear()) { %>
+                <span id="year"><%- theme.time.year %>-<%- new Date().getFullYear() %></span>
+            <% } else { %>
+                <span id="year"><%- theme.time.year %></span>
+            <% } %>
+            <a href="<%- url_for('/about') %>" target="_blank"><%- config.title %></a>
+            <br>
+            <% if (theme.postInfo.totalCount) { %>
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;<%- __('siteTotalWords') %>:&nbsp;<span
+                        class="white-color"><%= totalcount(site) %></span>
+            <% } %>
+            <% let socialClass = '' %>
+            <% if (theme.busuanziStatistics && theme.busuanziStatistics.enable) { %>
+                <% socialClass = 'social-statis' %>
+            <% } %>
+            <% if (theme.busuanziStatistics && theme.busuanziStatistics.totalTraffic) { %>
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;<%- __('siteTotalVisits') %>:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            <% } %>
+            <% if (theme.busuanziStatistics && theme.busuanziStatistics.totalNumberOfvisitors) { %>
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;<%- __('siteTotalVisitors') %>:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            <% } %>
+            <br>
+
+           
+            <% if (theme.icp.enable) { %>
+                <span id="icp"><img src="<%- theme.jsDelivr.url %><%- url_for('/medias/icp.png') %>"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="<%- url_for(theme.icp.url) %>" target="_blank"><%= theme.icp.text %></a>
+            </span>
+            <% } %>
+        <div class="col s12 m4 l4 social-link <%- socialClass %>"><%- partial('_partial/social-link') %></div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
