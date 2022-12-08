@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds">
-    <meta name="description" content="Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds">
+    <meta name="keywords" content="Add data&amp;APIs, Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds">
+    <meta name="description" content="To add a category, change the json sequence in data&amp;amp;APIs.ejs:
+12345var arr=[   &amp;#123;category:&amp;quot;PPG&amp;quot;, src: ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,53 +18,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</title>
+    <title>Add data&amp;APIs | Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
 
-    <!-- index cover -->
-    <!-- <link rel="stylesheet preload" type="text/css" href="/css/indexcover.css"> -->
-    <style>
-        .carousel-control {
-            width: 45px;
-            height: 45px;
-            line-height: 55px;
-            border-radius: 45px;
-            background: transparent;
-            cursor: pointer;
-            z-index: 100;
-        }
-        
-        #prev-cover {
-            position: absolute;
-            top: 48%;
-            left: 8px;
-        }
-        
-        #next-cover {
-            position: absolute;
-            top: 48%;
-            right: 8px;;
-        }
-        
-        #prev-cover i {
-            margin-right: 3px;
-        }
-        
-        #next-cover i {
-            margin-left: 3px;
-        }
-        
-        .carousel-control:hover {
-            background-color: rgba(0, 0, 0, .4);
-        }
-        
-        .carousel-control i {
-            color: #fff;
-            font-size: 2.4rem;
-        }
-    </style>
+    <!-- bg-cover style     -->
 
 
 
@@ -82,6 +42,8 @@
     <link rel="stylesheet" href="/css/post.css">
 
 
+
+    
 
 
 
@@ -260,291 +222,106 @@
     
 
 
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
 
-    <div class="carousel-item  white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align"><b>
-                
-                    Subtitle
-                
-                </b>
-            </div>
-
-            <div class="description center-align" style="font-size: 28px;">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "Welcome to our datasets",
-                            
-                        ],
-                        startDelay: 500,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title" style="font-size:80px">Add data&amp;APIs</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
-</script>
 
 
+<main class="container content">
 
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>Start
-                </a>
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+
+            <div class="post-info">
+                
+
+                
+
+                
+
+                
 
                 
             </div>
         </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>To add a category, change the json sequence in <code>data&amp;APIs.ejs</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr=[</span><br><span class="line">   &#123;category:<span class="string">&quot;PPG&quot;</span>, src: <span class="string">&quot;/medias/featureimages/13.jpg&quot;</span>, href: <span class="string">&quot;/Data&amp;APIs/index.html&quot;</span>,introduction: <span class="string">&quot;introduction&quot;</span>&#125;,</span><br><span class="line">   &#123;category:<span class="string">&quot;RFID&quot;</span>, src: <span class="string">&quot;/medias/featureimages/13.jpg&quot;</span>, href: <span class="string">&quot;#&quot;</span>,introduction: <span class="string">&quot;introduction&quot;</span>&#125;,</span><br><span class="line">   &#123;category:<span class="string">&quot;WiFi&quot;</span>, src: <span class="string">&quot;/medias/featureimages/13.jpg&quot;</span>, href: <span class="string">&quot;#&quot;</span>,introduction: <span class="string">&quot;introduction&quot;</span>&#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p> After cliking the card, you can link to another platform that restore the datasets or just create a new page by using this template. If use this template, create a md file in <code>source\_posts</code> files.<br> To revise the template of this page, <code>post.ejs</code> and <code>\_partial\post-detail.ejs</code> are related.<br> <code>source\css\my.css</code> to add new css.</p>
+<p> <code>source\medias\images</code> to add figure.</p>
+<p> <code>index.ejs</code> is the home page, <code>bg-cover.ejs</code> to revise the background.</p>
+
+                
+            </div>
+
+        </div>
     </div>
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
 </div>
 
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
 
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
 
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('10'),
-            fullWidth: true,
-            indicators: 'false' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-
-        function restartPlay() {
-            
-        };
-
-        
-    });
-</script>
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
-<main class="content">
+<!-- 代码语言 -->
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="news">
-    
-    <div class="title center-align">
-        &nbsp;&nbsp;News
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                        
-    <div class="row">
-
-    
-    
-        <div class="col s12 m6"  data-aos="zoom-out">
-            
-                 <div class="post-card" style="background-image: url('https://statics.sh1a.qingstor.com/2018/11/24/design.jpg');transition: all 1s;">
-            
-                <div class="post-body">
-                    <div class="post-categories">
-                        
-                            
-                                <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="category">subtitle</a>
-                            
-                        
-                    </div>
-                    <a href="/2018/11/24/ruan-jian-she-ji/ruan-jian-cheng-xu-she-ji-yuan-ze/">
-                        <h3 class="post-title">title</h3>
-                    </a>
-                    <p class="post-description">
-                        
-                            description
-                        
-                    </p>
-                    <a href="/2018/11/24/ruan-jian-she-ji/ruan-jian-cheng-xu-she-ji-yuan-ze/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                        <i class="icon far fa-eye fa-fw"></i>more
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6"  data-aos="zoom-out">
-            
-                 <div class="post-card" style="background-image: url('https://statics.sh1a.qingstor.com/2018/11/05/io.jpg')">
-            
-                <div class="post-body">
-                    <div class="post-categories">
-                        
-                            
-                                <a href="/categories/%E5%90%8E%E7%AB%AF/" class="category">subtitle</a>
-                            
-                        
-                    </div>
-                    <a href="/2018/11/05/hou-duan/java/java-io-zhi-shi-zheng-li/">
-                        <h3 class="post-title">title</h3>
-                    </a>
-                    <p class="post-description">
-                        description
-                        
-                    </p>
-                    <a href="/2018/11/05/hou-duan/java/java-io-zhi-shi-zheng-li/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
-                        <i class="icon far fa-eye fa-fw"></i>more
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/12/08/Add%20Data&APIs/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Add data&amp;APIs">
-                            
-                            <span class="card-title">Add data&amp;APIs</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                To add a category, change the json sequence in data&amp;APIs.ejs:
-12345var arr=[   &#123;category:&quot;PPG&quot;, src: 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Our Dataset name
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/11/28/Website%20Created/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Website Created">
-                            
-                            <span class="card-title">Website Created</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Our website has been deployed in Github. The master branch is the source code of this website and the gh-pages branch is
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Our Dataset name
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-        </div>
-    </article>
 
 </main>
 

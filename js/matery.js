@@ -170,11 +170,3 @@ $(function () {
     // 初始化加载 tooltipped.
     $('.tooltipped').tooltip();
 });
-//黑夜模式判断
-if (localStorage.getItem('isDark') === '1') {
-    document.body.classList.add('DarkMode');
-    $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')
-} else {
-    document.body.classList.remove('DarkMode');
-    $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')
-}
