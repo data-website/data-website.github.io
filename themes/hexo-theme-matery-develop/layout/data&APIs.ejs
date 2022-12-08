@@ -1,0 +1,186 @@
+<%- partial('_partial/post-cover') %>
+
+
+<div class="label" style="margin-top: 40px;margin-bottom: 20px;">
+    <div class="container">
+        <div class="Main">
+            <!-- categories -->
+            <div class="categories">
+                <span class="btn default" id="All">All</span>
+                
+                <span class="btn" id="PPG">PPG</span>
+                <span class="btn" id="RFID">RFID</span>
+                <span class="btn" id="WiFi">WiFi</span>
+                <span class="btn" id="Vibration">Vibration</span>
+                <span class="btn" id="mmWave">mmWave</span>
+                <span class="btn" id="Acoustic">Acoustic</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="article container">
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/Data&APIs/index.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Data&amp;APIs">
+                        
+                        <span class="card-title">Data&amp;APIs</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Our Dataset name
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        <div class="article col s12 m6 l4" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Current&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/Data&APIs/index.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Data&amp;APIs">
+                        
+                        <span class="card-title">Data&amp;APIs</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Our Dataset name
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+        
+    </div>
+</article>
+
+
+<script>
+    //data&APIs的json数组
+ var arr=[
+    {category:"PPG", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",introduction: "introduction"},
+    {category:"RFID", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction"},
+    {category:"WiFi", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction"}
+ ]
+ var article=document.getElementsByClassName("article")[0];
+ var art = article.getElementsByTagName("Article")[0];
+ var oUl=art.getElementsByClassName("row")[0];
+ var category=document.getElementsByClassName("categories")[0];
+ var btn = category.getElementsByClassName("btn");
+
+ var state = {
+    text: '',
+    category: 'All'
+}
+
+ function renderPage(data,state_category) {
+    console.log(data);
+    oUl.innerHTML = "";
+    data.forEach(function (ele, index, self) {
+        if (state_category=='All' || state_category==ele.category){
+        //遍历数组里面的东西，取其中数据构建html结构，
+        oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
+            ele.category+
+                            '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
+                                    +ele.introduction+'</p></span></div></div></div></div>'
+        console.log('True');
+                                }
+        console.log(state_category);
+     });
+}
+renderPage(arr, state.category);
+
+var lastDefault = btn[0]; //默认性别选项All 
+for(var i = 0; i < btn.length; i++){
+    (function(j){
+        btn[j].onclick = function(){
+            btn[j].className = "btn default";//点击时，给点击的按钮添加 css样式(default)
+            lastDefault.className = "btn";// 赋给样式后，取消上一个btn的样式
+            lastDefault = btn[j];//赋给样式后，此次点击的btn 就成了过去
+
+            state.category = btn[j].id;
+            console.log(state.category);
+            renderPage(arr,state.category);
+            console.log(arr);
+            // var newArr = screenSelect(arr, state.category); //筛选性别执行后返回新数组
+            // console.log(newArr);
+            // renderPage( screenInput(newArr, state.text));//利用新数组再次筛选搜索框，筛选后渲染页面
+        }
+    })(i)
+}
+
+function screenSelect(data, category) {
+    if (category == "All") { //判断输入的值是否为默认值a，如果是，不用筛选，直接返回原数组
+        return data;
+    } else {
+        return data.filter(function (ele, index, self) {//利用数组方法filter过滤，不懂filter方法，请看本人另外笔记filter方法
+            return category == ele.category; 
+            //第一遍循环，查看 数组第一个数据里面的 sex 是否等于 传进来的sex  如果是，返回这条数据到新数组
+            //{ name: "王小明", src: "./img/head.jpg", des: "成绩很好", sex: "m", age: 18 }  
+        })
+    }
+}
+
+function screenInput(data, value){
+    if(!value){//判断输入的值是否为默认值''，如果是，不用过滤，直接返回原数组
+        return data;
+    }else{
+      return data.filter(function(ele, index, self){
+           return ele.category.indexOf(value) >= 0; 
+            //字符串方法，indexOf 查看value这个字符串，是否存在于ele.name中，如果存在返回大于0的索引(true)
+            //如果不存在，返回-1，(false)
+            //如果返回(true)，返回这条数据到新数组中
+       })
+    }
+}
+</script>
+
