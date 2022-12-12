@@ -339,12 +339,12 @@
 <script>
     //data&APIs的json数组
  var arr=[
-    {category:"PPG", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",introduction: "introduction"},
-    {category:"RFID", src: "/medias/images/data&APIs/RFID_BioTag.png", href: "https://zenodo.org/record/7425995#.Y5apOnaZMuU",introduction: "RFID User Verification: BioTag"},
-    {category:"WiFi", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction"},
-    {category:"Vibration", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction"},
-    {category:"mmWave", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction"},
-    {category:"Acoustic", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction"},
+    {category:"PPG", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",introduction: "introduction",name:"name"},
+    {category:"RFID", src: "/medias/images/data&APIs/RFID_BioTag.png", href: "https://zenodo.org/record/7425995#.Y5apOnaZMuU",introduction: "RFID-based User Verification: ",name:"BioTag"},
+    {category:"WiFi", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
+    {category:"Vibration", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
+    {category:"mmWave", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
+    {category:"Acoustic", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
  ]
  var article=document.getElementsByClassName("article")[0];
  var art = article.getElementsByTagName("Article")[0];
@@ -367,7 +367,7 @@
             ele.category+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
                                 ele.src+'" class="responsive-img" alt="Data&amp;APIs"></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
-                                    +ele.introduction+'</p></span></div></div></div></div>'
+                                    +ele.introduction+'</p><p><strong>'+ele.name+'</strong></p></span></div></div></div></div>'
         console.log('True');
                                 }
         console.log(state_category);
