@@ -71,3 +71,10 @@
 .categories .btn.default{
     background-color: rgb(121, 119, 119);
 }
+
+.title{
+   font-size:36px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin-top: 40px;
+}
