@@ -242,6 +242,9 @@
             <div class="images" style="text-align:center">
             <img style="max-width: 100%" src="/medias/images/data&APIs/datasets_organization.png">
         </div>
+        <div class="data-p" style="margin-top: 20px;">
+            Here is a website to share our datasets and APIs. The dataset mainly includes WiFi, RFID, PPG, Vibration, mmWive and acoustic datasets.
+        </div>
         </div>
     </div>
 </div>
@@ -487,8 +490,8 @@
         oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.category+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
-                                    +ele.introduction+'</p><p><strong>'+ele.name+'</strong></p></span></div></div></div></div>'
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><span class="card-title" style="font-size:26px;margin-left:-9px;font-weight:600;margin-bottom:-15px">'+ele.name+'</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
+                                    +ele.introduction+'</p></span></div></div></div></div>'
         console.log('True');
                                 }
         if(ele.class=='2'&&(state_category=='All' ||state_category==ele.category || ele.application==state_category)){
@@ -496,7 +499,7 @@
             ele.application+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
                                 ele.src+'" class="responsive-img" alt="Data&amp;APIs"></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
-                                    +ele.introduction+'</p><p><strong>'+ele.name+'</strong></p></span></div></div></div></div>'
+                                    +ele.introduction+'</p></span></div></div></div></div>'
         console.log('10086');
         }
      });
@@ -567,7 +570,7 @@ function screenInput(data, value){
     <div class="col s12 m8 l8 copy-right center-align">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022</span>
+                <span id="year">2022-2023</span>
             
             <a href="/about" target="_blank">Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</a>
             <br>
