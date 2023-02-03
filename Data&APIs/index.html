@@ -457,8 +457,8 @@
 <script>
     //data&APIs的json数组
  var arr=[
-    {class:'1',category:"PPG", application:"Recognition", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",introduction: "introduction",name:"name"},
-    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", href: "https://zenodo.org/record/7425995#.Y5apOnaZMuU",introduction: "RFID-based User Verification: ",name:"BioTag"},
+    {class:'1',category:"PPG", application:"Recognition", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",subtitle: "introduction",name:"name"},
+    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", href: "https://zenodo.org/record/7425995#.Y5apOnaZMuU",subtitle: "RFID-based User Verification: ",name:"BioTag",introduction:"BioTag RFID Dataset is used for continuous user verification. This dataset contains the physiological characteristics from heart respiration captured by two RFID tags attached to the chest and the abdomen of 10 participants with 10 times every participant. It consists of recordings of collected raw RFID samples from a commodity RFID reader Impinj with a directional antenna Laird S9028PCL as a receiver."},
     {class:'1',category:"WiFi", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'1',category:"Vibration", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'1',category:"mmWave", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
@@ -490,7 +490,8 @@
         oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.category+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><span class="card-title" style="font-size:26px;margin-left:-9px;font-weight:600;margin-bottom:-15px">'+ele.name+'</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><span class="card-title" style="font-size:26px;margin-left:-9px;font-weight:600;margin-bottom:-15px">'+ele.name+'</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-family:Arial">'
+                                    +ele.subtitle+'</p></span><span><p class="Introduction" style="font-size:19px; line-height:1.1">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
         console.log('True');
                                 }
