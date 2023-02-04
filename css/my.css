@@ -109,3 +109,32 @@
     color: var(--krowd-theme-color-three);
     margin: 0 0 10px;
 }
+
+.project-card-footer {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card-footer span.project-tag {
+    position: relative;
+    background: #55198b;
+    color: #f5f2f4;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: .75rem;
+    height: 2em;
+    justify-content: center;
+    white-space: nowrap;
+    line-height: 1.5;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0 0.75em;
+    cursor: pointer;
+    transition: .2s ease-in;
+    font-family: Montserrat,"Montserrat",sans-serif;
+}

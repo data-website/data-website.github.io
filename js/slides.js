@@ -69,6 +69,9 @@ var swiper = new Swiper('.news-slider', {
         el: '.news-slider__pagination',
         clickable: true
     },
+    autoplay: {
+        delay:10000,
+      },
     on: {
         init: function () {
             var activeItem = document.querySelector('.swiper-slide-active');
