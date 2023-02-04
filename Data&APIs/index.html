@@ -33,8 +33,8 @@
 <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
 <link rel="stylesheet" type="text/css" href="/css/matery.css">
 <link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 <link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
-
 
 
 
@@ -56,11 +56,11 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
+                <a href="/" class="waves-effect waves-light" style="float: left;">
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Nation-wide Community-based <br> Mobile Edge Sensing and Computing Testbeds</span>
+                    <p style="font-size: 18px; margin-top:15px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;">Nation-wide Community-based<br>Edge Sensing and Computing Testbeds</p>
                 </a>
             </div>
             
@@ -458,7 +458,7 @@
     //data&APIs的json数组
  var arr=[
     {class:'1',category:"PPG", application:"Recognition", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",subtitle: "introduction",name:"name"},
-    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", href: "https://zenodo.org/record/7425995#.Y5apOnaZMuU",subtitle: "RFID-based User Verification: ",name:"BioTag",introduction:"BioTag RFID Dataset is used for continuous user verification. This dataset contains the physiological characteristics from heart respiration captured by two RFID tags attached to the chest and the abdomen of 10 participants with 10 times every participant. It consists of recordings of collected raw RFID samples from a commodity RFID reader Impinj with a directional antenna Laird S9028PCL as a receiver."},
+    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date: "Feb.2 2023", href: "https://zenodo.org/record/7425995#.Y5apOnaZMuU",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID Dataset is used for continuous user verification. This dataset contains the physiological characteristics from heart respiration captured by two RFID tags attached to the chest and the abdomen of 10 participants with 10 times every participant. It consists of recordings of collected raw RFID samples from a commodity RFID reader Impinj with a directional antenna Laird S9028PCL as a receiver."},
     {class:'1',category:"WiFi", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'1',category:"Vibration", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'1',category:"mmWave", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
@@ -490,7 +490,7 @@
         oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.category+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><span class="card-title" style="font-size:26px;margin-left:-9px;font-weight:600;margin-bottom:-15px">'+ele.name+'</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-family:Arial">'
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><span class="card-title" style="font-size:26px;margin-left:-9px;font-weight:600;margin-bottom:-15px">'+ele.name+'</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-family:Arial;font-weight:600">'
                                     +ele.subtitle+'</p></span><span><p class="Introduction" style="font-size:19px; line-height:1.1">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
         console.log('True');
@@ -498,8 +498,9 @@
         if(ele.class=='2'&&(state_category=='All' ||state_category==ele.category || ele.application==state_category)){
             APP_oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.application+
-                            '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction">'
+            '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><span class="card-title" style="font-size:26px;margin-left:-9px;font-weight:600;margin-bottom:-15px">'+ele.name+'</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-family:Arial;font-weight:600">'
+                                    +ele.subtitle+'</p></span><span><p class="Introduction" style="font-size:19px; line-height:1.1">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
         console.log('10086');
         }
@@ -748,6 +749,7 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
+    <script src="/js/slides.js"></script>
 
     
 
