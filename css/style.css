@@ -203,7 +203,7 @@
 }
 .news__title {
   color: #000000;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   opacity: .7;
   margin-top: 2px;
@@ -221,7 +221,8 @@
   color: #000000;
   margin: 10px 0;
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
   opacity: .7;
   transition: opacity .3s;
 }

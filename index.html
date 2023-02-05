@@ -371,7 +371,7 @@
         </div>
         <div class="row">
             <div class="col s12 m12 l8">
-                <p style="font-size: 20px;line-height: 1.5;margin-top: 0px;">
+                <p style="font-size: 20px;margin-top: 0px;">
                     The advancement of mobile sensing devices and mobile computing technologies have triggered new research opportunities in mobile edge sensing and computing, including activity recognition, wellbeing monitoring, user authentication, human dynamics tracking, etc. However, research in mobile edge sensing and computing suffers from labor-intensive training, unrealistic experimental environments, heavy environmental interferences in practical scenarios. In addition, different research groups usually conduct small-scale experiments separately, which makes it difficult to share the research results and data among groups in the same community. The U.S. mobile edge sensing and computing community demands an experimental infrastructure to share data/models nationwide and perform practical and repeatable experiments. The goal of this project is to build a large-scale, mobile edge sensing and computing infrastructure to provide practical experimental environments, rich user tools and services, and data/model sharing. Based on the proposed infrastructure, individual research groups can be connected to conduct large-scale research with low efforts. Many interdisciplinary communities can also be brought together, conducting research via the proposed infrastructure, including deep learning-based hardware design, smart healthcare, AR/VR, human flow monitoring, smart home, and smart city. The research results can benefit interdisciplinary curriculums with new research topics and tasks for undergraduate/graduate and minority students.</p>
                     <p style="font-size: 20px;margin-top: -5px;line-height: 1.5;">"Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds" is a collaborative platform from researchers at <P_red>Rutgers University, Temple University, New York Institute of Technology (NYIT) and George Mason University</P_red>. Our project is supported by the US National Science Foundation CISE Community Infrastructure (CCRI) Award.
                 </p>
@@ -401,11 +401,11 @@
                 <br>
                 <h1 style="font-size: 50px;font-weight: 600;line-height: normal;text-align: center;">Platform Statistics</h1>
                 <p style="font-size: 20px;margin-top: -1px;">
-                  The platform contains datasets collected from WiFi, RFID, PPG, vibration, mmWave, and acoustic sensors. This platform also provides APIs for various sensing applications.</p>
+                  The platform contains datasets collected from WiFi, RFID, PPG, vibration, mmWave, and acoustic sensors. It also provides APIs for various sensing applications.</p>
                 <br>
             </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="col s12 m3 l3" style="align-items: center;text-align: center;">
                 <img src="/medias/images/logo/dataset.png" height="120px" draggable="false">
 
@@ -463,7 +463,7 @@
                 <br>
             </div>
         </div>
-        <div class="row" style="margin-top: -40px;">
+        <div class="row" style="margin-top: -40px;" data-aos="fade-up">
             <div class="col s12 m12 l12">
                 <div class="wrapper" style="margin-top: -60px;">
                     <div class="news-slider">
@@ -631,19 +631,21 @@
 <script> 
 var arr=[
     {class:'1',category:"PPG", application:"Recognition", src: "/medias/featureimages/13.jpg", href: "/Data&APIs/index.html",subtitle: "introduction",name:"name"},
-    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+   
     {class:'1',category:"WiFi", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'1',category:"Vibration", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
+    
+{class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
     {class:'1',category:"mmWave", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'1',category:"Acoustic", application:"Authentication", src: "/medias/featureimages/13.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'2',category:"RFID", application:"Authentication", src: "/medias/featureimages/12.jpg", href: "#",introduction: "introduction",name:"name"},
     {class:'2',category:"PPG", application:"Recognition", src: "/medias/featureimages/12.jpg", href: "#",introduction: "introduction",name:"name"},
- 
  ]
  var num_data=0;
  var num_api=0;
  var num_tutorial=1;
  var num_contributor=9;
+ var time_duration=3000;
  for(var i = 0; i < arr.length; i++){
     if(arr[i].class=='1'){
         num_data+=1;
@@ -651,6 +653,8 @@ var arr=[
         num_api+=1;
     }
  }
+ 
+ var news_arr=arr.splice(0,4);
  var oUl=document.getElementsByClassName("swiper-wrapper")[0];
  function renderPage(data) {
     console.log(data);
@@ -661,7 +665,8 @@ var arr=[
         console.log('True');
      });
 }
-renderPage(arr);
+console.log(arr[0])
+renderPage(news_arr);
 
     //数字自增到某一值动画参数（目标元素,自定义配置） 
     function NumAutoPlusAnimation(targetEle, options) { 
@@ -699,20 +704,20 @@ renderPage(arr);
     } 
    
     NumAutoPlusAnimation("dataset", { 
-     time: 1500, 
+     time: time_duration, 
      num: num_data, 
      regulator: 50 
     }) 
  
   NumAutoPlusAnimation("api", { 
-   time: 1500, 
+   time: time_duration, 
    num: num_api, 
    regulator: 50 
   }) 
 
 
   NumAutoPlusAnimation("contributors", { 
-   time: 1500, 
+   time: time_duration, 
    num: num_contributor, 
    regulator: 50 
   }) 
@@ -741,7 +746,7 @@ renderPage(arr);
             
                 <span id="year">2022-2023</span>
             
-            <a href="/about" target="_blank">Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</a>
+            <a href="/index">Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</a>
             <br>
             
             
