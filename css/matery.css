@@ -2351,12 +2351,12 @@ body.DarkMode .theme-btn:hover {
 
 .border-box{
     box-sizing: border-box;
-    background-color: #36d792;
-    transform: skew(10deg);
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 400px;
+    background-color: #e2e2e7;
+    transform: skew(-8deg);
+    width: 90%;
     display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
+
