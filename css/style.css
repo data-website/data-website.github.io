@@ -256,4 +256,7 @@
   .news-slider__item.swiper-slide {
     width: 70% !important;
   }
+  .news__txt{
+      font-size: 16px;
+  }
 }

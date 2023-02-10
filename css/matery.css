@@ -11,15 +11,16 @@ body {
 
 h1 {
     margin: 48px 0 22px -5px;
-    font-size: 42px;
-    font-family: Poppins,sans-serif;
-    font-weight: bold;
+    font-family: Poppins-bold,sans-serif;
+    font-weight:600;
+    font-size: 54px;
     line-height: normal;
+    color: rgb(71, 113, 168);
     text-align: center;
 }
 
 h2 {
-    margin: 42px 0 18px -5px;
+    margin: 50px 0 30px 0px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: normal;
@@ -2347,7 +2348,10 @@ body.DarkMode .theme-btn:hover {
     font-family: Poppins;
     src: url(../libs/font/Poppins-Light.ttf)
 }
-
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../libs/font/Poppins-Bold.ttf)
+}
 .border-box{
     box-sizing: border-box;
     display: flex;
