@@ -3,7 +3,7 @@
 
 Our website has been deployed in [Github](https://github.com/data-website/data-website.github.io). The master branch is the source code of this website and the gh-pages branch is the code that generated from Hexo. I suggest that you can download the code from master branch and upload on another branch that named by your school or your name.
 
-Our website is deployed in [https://data-website.github.io/](https://data-website.github.io/). Here are some introduction how to use this template.
+Our website is deployed in [https://data-website.github.io/](https://data-website.github.io/). We can use the template in the branch of `Main Branch`. Here are some introduction how to use this template.
 
 ## Installation
 
