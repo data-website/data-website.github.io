@@ -20,71 +20,26 @@
         var containerClass = isTocEnable ? 'post-container' : 'container';
     %>
     
+    <main class="content">
+
     
-<main class="container content">
 
-
-        <article id="prenext-posts" class="prev-next articles">
-            <div class="row article-row">
-                
-                <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-                    <div class="article-badge left-badge text-color">
-                        <i class="far fa-dot-circle"></i>&nbsp;Current
+        <div id="tags" class="container chip-container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="tag-title center-align">
+                        Coming soon!
                     </div>
-                    <div class="card">
-                        <a href="/Workshop/index.html">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Workshop">
-                                
-                                <span class="card-title">TBD</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    
-                                
-                            </div>
-                            <div class="publish-info">
-                                    <span class="publish-date">
-                                        <i class="far fa-clock fa-fw icon-date"></i>2018-09-30
-                                    </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    Our Dataset name
-                                    
-                                </span>
-                            </div>
-                        </div>
-        
+                    <div class="tag-chips">
                         
                     </div>
                 </div>
             </div>
-        </article>
-    <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-    
-</main>
+        </div>
+        
+            
+        
+    </main>
     
     <% if (theme.mathjax.enable && page.mathjax) { %>
     <script src="<%- theme.mathjax.cdn %>"></script>

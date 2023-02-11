@@ -1,25 +1,19 @@
 <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+    <div class="col s10 offset-s1 m10 offset-m1 l10 offset-l1">
         <div class="brand">
-            <div class="title center-align"><b>
-                <% if (config.subtitle && config.subtitle.length > 0) { %>
-                <%= config.subtitle %>
-                <% } else { %>
-                    Subtitle
-                <% } %>
+            <div class="title center-align" style="font-family: Poppins-bold,sans-serif;font-size: 60px;"><b>
+                Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds
                 </b>
             </div>
 
-            <div class="description center-align" style="font-size: 28px;">
+            <div class="description center-align" style="font-size: 40px;font-weight: 700;">
                 <% if (theme.subtitle.enable) { %>
                 <span id="subtitle"></span>
                 <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.typed) %>"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
                         strings: [ 
-                            <% theme.subtitle.sub.forEach(function(item){%>
-                                "<%= item %>",
-                            <% }) %>
+                            "Welcome to our website"
                         ],
                         startDelay: <%= theme.subtitle.startDelay %>,
                         typeSpeed: <%= theme.subtitle.typeSpeed %>,

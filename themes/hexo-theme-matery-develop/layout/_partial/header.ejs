@@ -2,11 +2,11 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="<%- url_for() %>" class="waves-effect waves-light">
+                <a href="<%- url_for() %>" class="waves-effect waves-light" style="float: left;">
                     <% if (theme.logo !== undefined && theme.logo.length > 0) { %>
                     <img src="<%- theme.jsDelivr.url %><%- url_for(theme.logo) %>" class="logo-img" alt="LOGO">
                     <% } %>
-                    <span class="logo-span">Nation-wide Community-based <br> Mobile Edge Sensing and Computing Testbeds</span>
+                    <p style="font-size: 18px; margin-top:10px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;">Nation-wide Community-based<br>Edge Sensing and Computing Testbeds</p>
                 </a>
             </div>
             <%- partial('_partial/navigation') %>

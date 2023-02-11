@@ -1,5 +1,11 @@
 ---
-title: Website Created
+name: Website Created
+title: Our Website is online!
+date: 2022-11-5
+href: #
+imgsrc: /medias/images/welcome.png
+introduction: Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds is a collaborative platform from researchers at Rutgers University, Temple University, New York Institute of Technology (NYIT) and George Mason University. Our project is supported by the US National Science Foundation CISE Community Infrastructure (CCRI) Award.
+contributor: Temple University
 ---
 
 Our website has been deployed in [Github](https://github.com/data-website/data-website.github.io). The master branch is the source code of this website and the gh-pages branch is the code that generated from Hexo. I suggest that you can download the code from master branch and upload on another branch that named by your school or your name.

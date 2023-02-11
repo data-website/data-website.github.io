@@ -1,5 +1,11 @@
 ---
-title: Add data&APIs
+name: BioTag
+title: RFID-based User Verification
+date: 2023-1-15
+href: https://zenodo.org/record/7466946#.Y96Qa3aZMSE
+imgsrc: /medias/images/data&APIs/RFID_BioTag.png
+introduction: BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants.
+contributor: Temple University
 ---
 To add a category, change the json sequence in `data&APIs.ejs`:
 
