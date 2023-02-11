@@ -72,25 +72,39 @@ hexo d
 
 Hexo will deploy all files in `public` folder to ph-pages branch. Then the website is deployed in *username.github.io*
 
-## New page
+## Add new dataset
 
-If the `source` directory doesn't have this file, you need to create a new one like this:
+To add a new block in data&API page, just change the `JSON` sequence in `data&APIs.ejs`. The `JSON` sequence is at the bottom of this page, inside the `<script>`. The format is as follows:
 
 ```bash
-hexo new page "new page name"
+ var arr=[
+    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",home_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+ ]
+ ```
+ 
+ `class` represents the application of this block, `1` represents it's a dataset. `2` represents it's an application. 
+`src` is the location of image. The path of image `/medias/images/data&APIs/`. 
+`href` is the website where to download the dataset.
+`intoduction` is to introduce this dataset on the `Data&APIs` page.
+`home_introduction` is to introduce this dataset on the `Home` page.
+
+The whole path to adding an image is `themes/hexo-theme-matery-develop/source/medias/images/data&APIs/`. Please chage the `JSON` sequence in `home.ejs` page at the same time. The `JSON` sequence is also inside the `<script>` at the bottom of the page.
+
+## Add a block in `Timeline` page
+
+Add a new `.md` file in the path of `source/_posts`, the format is as follows:
+
+```bash
+---
+name: BioTag
+title: RFID-based User Verification
+date: 2023-1-15
+href: https://zenodo.org/record/7466946#.Y96Qa3aZMSE
+imgsrc: /medias/images/data&APIs/RFID_BioTag.png
+introduction: BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants.
+contributor: Temple University
+---
 ```
 
-When editing new page file *index.md*, need to add something
 
-```markdown
-title: new page name
-date: 2018-09-30 17:25:30
-type: "categories"
-layout: "layout in theme"
-```
-
-## Modify Template
-
-
-
-> **Note**: 
+> **Note**: Please let us know after updating some pages. Thank you.
