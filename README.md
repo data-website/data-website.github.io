@@ -82,11 +82,15 @@ To add a new block in data&API page, just change the `JSON` sequence in `data&AP
  ]
  ```
  
- `class` represents the application of this block, `1` represents it's a dataset. `2` represents it's an application. 
+`class` represents the application of this block, `1` represents it's a dataset. `2` represents it's an application. 
+ 
 `src` is the location of image. The path of image `/medias/images/data&APIs/`. 
+
 `href` is the website where to download the dataset.
-`intoduction` is to introduce this dataset on the `Data&APIs` page.
-`home_introduction` is to introduce this dataset on the `Home` page.
+
+`intoduction` is some introductions of this dataset on the `Data&APIs` page.
+
+`home_introduction` is some introductions of this dataset on the `Home` page.
 
 The whole path to adding an image is `themes/hexo-theme-matery-develop/source/medias/images/data&APIs/`. Please chage the `JSON` sequence in `home.ejs` page at the same time. The `JSON` sequence is also inside the `<script>` at the bottom of the page.
 
