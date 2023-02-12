@@ -78,7 +78,7 @@ To add a new block in data&API page, just change the `JSON` sequence in `data&AP
 
 ```bash
  var arr=[
-    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",home_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+    {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
  ]
  ```
  
@@ -90,7 +90,7 @@ To add a new block in data&API page, just change the `JSON` sequence in `data&AP
 
 `intoduction` is some introductions of this dataset on the `Data&APIs` page.
 
-`home_introduction` is some introductions of this dataset on the `Home` page.
+`short_introduction` is some introductions of this dataset on the `Home` page.
 
 The whole path to adding an image is `themes/hexo-theme-matery-develop/source/medias/images/data&APIs/`. Please chage the `JSON` sequence in `home.ejs` page at the same time. The `JSON` sequence is also inside the `<script>` at the bottom of the page.
 
