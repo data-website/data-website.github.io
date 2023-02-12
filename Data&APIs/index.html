@@ -60,7 +60,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <p style="font-size: 18px; margin-top:10px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;">Nation-wide Community-based<br>Edge Sensing and Computing Testbeds</p>
+                    <p style="font-size: 18px; margin-top:14px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;">Nation-wide Community-based<br>Edge Sensing and Computing Testbeds</p>
                 </a>
             </div>
             
@@ -460,9 +460,9 @@
 <script>
     //data&APIs的json数组
  var arr=[
- {class:'1',category:"PPG", application:"Recognition", src: "/medias/featureimages/12.jpg", date:'Feb.2 2023', href: "/Data&APIs/index.html",subtitle: "introduction",name:"name",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+ {class:'1',category:"WiFi", application:"Recognition", src: "/medias/images/data&APIs/Object_detection.png", date:'Feb.11 2023', href: "https://zenodo.org/record/7631168#.Y-fvAHbMIQ8",subtitle: "WiFi-based Object Detection",name:"WiFi Sensing",introduction:"The dataset of environment-independent in-baggage object identification system leveraging low-cost WiFi. The dataset contains the extracted CSI features from 14 representative in-baggage objects of 4 different materials. The experiments are conducted in 3 different office environments with different sizes.",short_introduction:"The dataset of environment-independent in-baggage object identification system leveraging low-cost WiFi. The dataset contains the extracted CSI features from 14 representative in-baggage objects of 4 different materials. The experiments are conducted in 3 different office environments with different sizes."},
+ {class:'1',category:"WiFi", application:"Recognition", src: "/medias/images/data&APIs/Behavior-Based-dataset.png", date:'Feb.12 2023', href: "https://zenodo.org/record/7631168#.Y-fvAHbMIQ8",subtitle: "Behavior-Based WiFi User Dataset",name:"WiFi Sensing",introduction:"The Behavior-based WiFi User Dataset for user authentication. This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment. The dataset can be used by fellow researchers to reproduce the original work or to further explore other machine-learning problems in the domain of WiFi sense. ",short_introduction:"The Behavior-based WiFi User Dataset for user authentication. This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment. The dataset can be used by fellow researchers to reproduce the original work or to further explore other machine-learning problems in the domain of WiFi sense."},
     {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
-    {class:'1',category:"WiFi", application:"Authentication", src: "/medias/featureimages/13.jpg", date:'Feb.2 2023', href: "#",introduction: "introduction",name:"name",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
     {class:'1',category:"Vibration", application:"Authentication", src: "/medias/featureimages/11.jpg", date:'Feb.2 2023', href: "#",introduction: "introduction",name:"name",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
     {class:'1',category:"mmWave", application:"Authentication", src: "/medias/featureimages/10.jpg", date:'Feb.6 2023', href: "#",subtitle: "MmWave-based Activity Recognition",name:"mmWave",introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. The data are all captured by the mmWave radar TI-AWR1642. We develop spatial-temporal heatmaps to extract motion features from raw mmWave signal. Our dataset can be used by fellow researchers to reproduce the original work or to further explore other machine-learning problems in the domain of mmWave signals.",home_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
     {class:'1',category:"Acoustic", application:"Authentication", src: "/medias/featureimages/10.jpg", href: "#",introduction: "introduction",name:"name"},
@@ -481,31 +481,54 @@
     text: '',
     category: 'All'
 }
-
+ var num_per_row=3;
  function renderPage(data,state_category) {
-    console.log(data);
+     
+ var count_app=0;
+ if (window.innerWidth<995){
+     num_per_row=2
+ }else{
+     num_per_row=3
+ }
     oUl.innerHTML = "";
     APP_oUl.innerHTML="";
     data.forEach(function (ele, index, self) {
+        console.log(window.innerWidth)
         if (ele.class=='1' && (state_category=='All' || state_category==ele.category || ele.application==state_category)){
         //遍历数组里面的东西，取其中数据构建html结构，
-        oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up" style="margin-bottom:40px;"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
+        if (index%num_per_row==0){
+            oUl.innerHTML+='<div class="col m12 l12">'
+        }
+        oUl.innerHTML+='                    <div class="article col s12 m6 l4 aos-init aos-animate" data-aos="fade-up" ><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.category+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="font-size:22px;margin-left:-9px;font-weight:600;margin-bottom:-12px;line-height:1.3">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:18px; opacity:0.78;line-height:1.2;">'
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="font-size:22px;margin-left:-9px;font-weight:600;font-family:Poppins; margin-bottom:-12px;line-height:1.3">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
+                                    if (index%num_per_row==0){
+            oUl.innerHTML+='</div>'
+        }                           
         console.log('True');
                                 }
         if(ele.class=='2'&&(state_category=='All' ||state_category==ele.category || ele.application==state_category)){
-            APP_oUl.innerHTML+='                    <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
+            count_app+=1;
+            if (count_app%num_per_row==0){
+            oUl.innerHTML+='<div class="col m12 l12">'
+        }
+
+            APP_oUl.innerHTML+='                    <div class="article col s12 m6 l4 aos-init aos-animate" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.application+
             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="font-size:22px;margin-left:-9px;font-weight:600;margin-bottom:-12px;line-height:1.3">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:18px; opacity:0.78;line-height:1.2;">'
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="font-size:22px;margin-left:-9px;font-weight:600;margin-bottom:-12px;line-height:1.3">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
-        console.log('10086');
+                                    if (count_app%num_per_row==0){
+            oUl.innerHTML+='</div>'
+        }
         }
      });
 }
+window.addEventListener("resize", function () {
+                renderPage(arr, state.category);
+			}, false)
 renderPage(arr, state.category);
 
 var lastDefault = btn[0]; //默认性别选项All 

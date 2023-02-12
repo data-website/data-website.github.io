@@ -150,6 +150,7 @@ pre {
     margin-top: 12px;
     -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
     box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    
 }
 
 code {
@@ -256,24 +257,25 @@ mark {
     background-color: #fcf8e3;
     padding: .2em;
 }
-
 .card {
     border-radius: 10px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
 .card .card-image img {
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
     /* 修改文章列表图片填充样式为 cover 以覆盖整个区域而不会被缩放 */
     object-fit: contain;
     transition: all 0.8s;
 }
 
 .card .card-image img:hover {
-    transform: scale(1.18);
+    transform: scale(1.1);
 }
 
-
+.card-title{
+    font-family: Mon;
+}
 .container .row {
     margin-bottom: 0;
 }
@@ -612,18 +614,57 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
-    line-height: 1.2em;
+    font-size: 60px;
+    line-height: 1.4;
     margin-bottom: 20px;
     position: relative;
 }
 
 .bg-cover .description {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 44px;
     line-height: 1.4em;
     color: #eee;
 }
+
+
+/*大屏幕下(桌面类)的样式*/
+@media only screen and (min-width: 993px) {
+    .bg-cover .title {
+        font-size: 60px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+
+/*中等屏幕下(平板类)的样式*/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .bg-cover .title {
+        font-size: 44px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .bg-cover .description {
+        font-size: 38px;
+        line-height: 1.4em;
+        color: #eee;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .bg-cover .title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .bg-cover .description {
+        font-size: 28px;
+        line-height: 1.4em;
+        color: #eee;
+    }
+}
+
 
 .bg-cover .post-title {
     margin: 0 auto;
@@ -825,7 +866,7 @@ header .go-back i {
     margin-top: 15px;
     text-align: center;
     border: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     color: rgba(0, 0, 0, .87);
     background: #fff 50%;
     background-size: cover;
@@ -889,7 +930,7 @@ header .go-back i {
 
 .recommend .post-card .read-more .icon {
     font-size: 1.05rem;
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 .archive-calendar {
@@ -907,11 +948,10 @@ header .go-back i {
 }
 
 /*文章列表卡片各样式*/
-#articles {
+.article {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
-
 article a {
     margin-right: 0 !important;
     color: #525f7f;
@@ -929,9 +969,19 @@ article a:hover {
     margin-right: 0;
 }
 
-article .card {
-    border-radius: 8px;
+
+article .card:hover{
+    border-radius: 10px;
     overflow: hidden;
+    max-height: 600px;
+    transition: max-height 0.3s linear;
+}
+
+
+article .card {
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 310px;
 }
 
 article .card-image {
@@ -940,9 +990,12 @@ article .card-image {
 }
 
 article .card-image img {
-    height: 250px;
+    vertical-align: middle;
+    height: 280px;
     border-radius: 0.3rem;
     opacity: .7;
+    
+    margin-top: -20px;
 }
 
 article .tag-image img {
@@ -968,7 +1021,7 @@ article .article-content .publish-author {
 }
 
 .publish-author .icon-category {
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .article-content .publish-author .post-category {
@@ -997,7 +1050,7 @@ article .article-tags .chip {
 .prev-next .article-badge {
     min-width: 3rem;
     margin-top: 7px;
-    padding: 3px 10px 3px 8px;
+    padding: 3px 8px 3px 8px;
     text-align: center;
     font-size: 1rem;
     line-height: inherit;
@@ -1530,12 +1583,9 @@ thead {
 
 .cd-timeline-content {
     position: relative;
-    margin-top: -40px;
     margin-left: 60px;
     padding: 0;
     border-radius: 5px;
-    background: #ffffff;
-    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
 .cd-timeline-content::after {
@@ -1546,8 +1596,14 @@ thead {
 
 .cd-timeline-content .card {
     margin: 0;
+    max-height: 330px;
 }
-
+.cd-timeline-content .card .card-image img{
+    margin: 0;
+    display: inline;
+    max-height: 240px;
+    vertical-align: middle;
+} 
 .cd-timeline-content::before {
     content: '';
     position: absolute;
@@ -2352,6 +2408,11 @@ body.DarkMode .theme-btn:hover {
     font-family: Poppins-bold;
     src: url(../libs/font/Poppins-Bold.ttf)
 }
+@font-face {
+    font-family: Mon;
+    src: url(../libs/font/Montserrat-Medium.ttf)
+}
+
 .border-box{
     box-sizing: border-box;
     display: flex;
