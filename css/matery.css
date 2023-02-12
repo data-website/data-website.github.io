@@ -2,7 +2,7 @@
 /*小屏幕下(手机类)的样式*/
 
 body {
-    background-color: #eaeaea;
+    background-color: #ffffff;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
@@ -21,16 +21,21 @@ h1 {
 
 h2 {
     margin: 50px 0 30px 0px;
-    font-size: 1.8rem;
+    font-family: Poppins-bold,sans-serif;
+    font-weight:600;
+    font-size: 54px;
     font-weight: bold;
     line-height: normal;
 }
 
 h3 {
-    margin: 38px 0 15px -4px;
-    font-size: 1.6rem;
+    margin: 50px 0 30px 0px;
+    font-family: Poppins-bold,sans-serif;
+    font-weight:600;
+    font-size: 60px;
     font-weight: bold;
     line-height: normal;
+    text-align: center;
 }
 
 h4 {
@@ -68,16 +73,31 @@ p_red{
     text-align:justify;
     color: rgb(185, 4, 4);
 }
-
+ 
+.title-top{
+    font-family: Poppins-bold,sans-serif;
+    font-weight:600;
+    font-size: 54px;
+    color: rgb(71, 113, 168);
+}
 
 @media only screen and (max-width: 601px) {
     .container {
         width: 90%;
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
     h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .title-top{
         font-size: 32px;
     }
 }
@@ -91,6 +111,15 @@ p_red{
         font-size: 20px;
     }
     h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 54px;
+    }
+    .title-top{
         font-size: 36px;
     }
 }
@@ -273,15 +302,20 @@ mark {
     transform: scale(1.1);
 }
 
-.card-title{
+.card .card-title{
     font-family: Mon;
+    font-size: 22px;
+    line-height: 1.35;
 }
 .container .row {
     margin-bottom: 0;
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #474646 0%, #383636 100%);
+    background-image: linear-gradient(to right, #4b4949 0%, #383636 100%);
+    background-size: cover;
+    background-repeat:no-repeat; 
+    background-position:left top
 }
 
 .text-color {
@@ -948,9 +982,14 @@ header .go-back i {
 }
 
 /*文章列表卡片各样式*/
+
+
+.article:hover {
+    margin-bottom: 50px;
+}
 .article {
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 article a {
     margin-right: 0 !important;
@@ -974,6 +1013,7 @@ article .card:hover{
     border-radius: 10px;
     overflow: hidden;
     max-height: 600px;
+    box-shadow: 4px 5px rgb(50 50 93 / 10%), 0 4px 5px rgb(0 0 0 / 7%) !important;
     transition: max-height 0.3s linear;
 }
 
@@ -1106,6 +1146,24 @@ article .article-tags .chip {
 @media only screen and (max-width: 550px) {
     #articleContent table {
         table-layout: fixed;
+    }
+    .card .card-title{
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    article .card {
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 700px !important;
+    }
+    .card .card-title{
+        font-size: 18px;
+    }
+    .article {
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 }
 
@@ -1596,7 +1654,7 @@ thead {
 
 .cd-timeline-content .card {
     margin: 0;
-    max-height: 330px;
+    max-height: 325px;
 }
 .cd-timeline-content .card .card-image img{
     margin: 0;
@@ -2095,8 +2153,7 @@ p.search-result-summary{
     /* place for '...' */
     margin-right: -1em;
     padding-right: 1em;
-    text-align: justify;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /* create the ... style */

@@ -60,7 +60,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <p style="font-size: 18px; margin-top:14px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;">Nation-wide Community-based<br>Edge Sensing and Computing Testbeds</p>
+                    <p class='title-left' style="font-size: 18px; margin-top:14px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;" id='title'>Nation-wide Community-based<br>Edge Sensing and Computing Testbeds</p>
                 </a>
             </div>
             
@@ -131,7 +131,6 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</div>
         <div class="logo-desc">
             
             
@@ -217,7 +216,6 @@
     </nav>
 
 </header>
-
     
     
     
@@ -227,7 +225,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title" style="font-size:80px">Board</h1>
+                    <h3>Board</h3>
                 </div>
             </div>
         </div>
@@ -258,17 +256,36 @@
         
     
 </main>
-    
+<script>
+    var title_oUl=document.getElementsByClassName("title-left")[0];
+    if ((995<window.innerWidth && window.innerWidth<1182)||window.innerWidth<800){
+      console.log('1231')
+          title_oUl.innerHTML="";
+          title_oUl.innerHTML+="Nation-Wide<br>Testbeds"
+    }
+    console.log(title_oUl)
+    function retitle(){
+        if ((995<window.innerWidth && window.innerWidth<1182) ||window.innerWidth<800){
+          title_oUl.innerHTML="";
+          title_oUl.innerHTML+="Nation-Wide<br>Testbeds"
+     console.log('2')
+    }
+    }
+    window.addEventListener("resize", function () {
+        console.log(window.innerWidth);
+                retitle();
+      }, false)
+  </script>
     
     
 
-    <footer class="page-footer bg-color">
+    <footer class="page-footer bg-color" >
     
-
+<div style="background-image: url(/medias/images/bg-footer.png);background-size: cover;background-repeat:no-repeat; background-position:left top">
     <div class="container row"
          style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
-            
+            <br>
             <div class="col s12 m8 l8" style="margin-left: 0px;">
                 <img src="/medias/logo.png" class="logo-img" alt="LOGO" height="80px">
                 <p style="font-size: 20px;"><strong>Contact Info</strong></p>
@@ -308,6 +325,7 @@
 
 
 </div>
+    </div>
     </div>
 </footer>
 
