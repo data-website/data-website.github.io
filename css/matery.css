@@ -10,13 +10,13 @@ body {
 }
 
 h1 {
-    margin: 48px 0 22px -5px;
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
     font-size: 54px;
     line-height: normal;
     color: rgb(71, 113, 168);
     text-align: center;
+    margin-top: 100px;
 }
 
 h2 {
@@ -86,10 +86,11 @@ p_red{
         width: 90%;
     }
     p{
-        font-size: 16px;
+        font-size: 18px;
     }
     h1{
-        font-size: 32px;
+        font-size: 30px;
+        margin-top: 28px;
     }
     h2{
         font-size: 28px;
@@ -108,7 +109,7 @@ p_red{
         width: 95%;
     }
     p{
-        font-size: 20px;
+        font-size: 18px;
     }
     h1{
         font-size: 36px;
@@ -143,10 +144,32 @@ p_red{
     }
     
     p{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
+/*大屏幕下(桌面类)的样式*/
+@media only screen and (min-width: 1300px) {
+    .container {
+        width: 90%;
+    }
+
+    .head-container {
+        position: absolute;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .post-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1250px;
+    }
+    
+    p{
+        font-size: 22px;
+    }
+}
 
 hr {
     margin: 20px 0;
