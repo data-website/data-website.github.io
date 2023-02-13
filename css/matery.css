@@ -12,7 +12,7 @@ body {
 h1 {
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 54px;
+    font-size: 44px;
     line-height: normal;
     color: rgb(70, 113, 168);
     text-align: center;
@@ -23,7 +23,7 @@ h2 {
     margin: 50px 0 30px 0px;
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 54px;
+    font-size: 44px;
     font-weight: bold;
     line-height: normal;
 }
@@ -77,7 +77,7 @@ p_red{
 .title-top{
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 54px;
+    font-size: 44px;
     color: rgb(71, 113, 168);
 }
 
@@ -168,10 +168,21 @@ p_red{
     }
     
     p{
+        font-size: 20px;
+    }
+}
+/*大屏幕下(桌面类)的样式*/
+@media only screen and (min-width: 1800px) {
+    h1{
+        font-size: 54px;
+    }
+    h2{
+        font-size: 54px;
+    }
+    p{
         font-size: 22px;
     }
 }
-
 hr {
     margin: 20px 0;
     border: 0;
