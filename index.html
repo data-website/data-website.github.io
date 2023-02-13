@@ -168,7 +168,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img responsive-img">
         
         <div class="logo-desc">
             
@@ -365,7 +365,7 @@
             <div class="col s12 m12 l12">
                 <div class="title center-align" id="fa-title">
                   <br>
-                <i class="far fa-lightbulb" style="color: rgb(71, 113, 168);margin-top: 40px;font-size: 50px;"></i><span class="title-top">&nbsp Platform Information</span>
+                <i class="far fa-lightbulb" style="color: rgb(71, 113, 168);margin-top: 20px;font-size: 50px;"></i><span class="title-top">&nbsp Platform Information</span>
                 </div>
                 <br><br>
             </div>
@@ -508,7 +508,7 @@
                           </button>
                         </div>
               
-                        <div class="news-slider__pagination"></div>
+                        <div class="news-slider__pagination" style="margin-top: 30px;"></div>
                       </div>
                     </div>
                   </div>
@@ -541,11 +541,13 @@
 <script> 
  var arr=[
    
- {class:'1',category:"WiFi", application:"Recognition", src: "/medias/images/data&APIs/WiFi-Dataset2.png", date:'Feb.12 2023', href: "https://zenodo.org/record/7580687#.Y-kyuXbMJD8",subtitle: "Behavior-Based WiFi User Dataset",name:"WiFi Sensing",introduction:"This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment. . ",short_introduction:". This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment."},
+ 
 
  {class:'1',category:"WiFi", application:"Recognition", src: "/medias/images/data&APIs/Object_detection.png", date:'Feb.11 2023', href: "https://zenodo.org/record/7631168#.Y-fvAHbMIQ8",subtitle: "WiFi-based Object Detection",name:"WiFi Sensing",introduction:"The dataset of environment-independent in-baggage object identification system leveraging low-cost WiFi. The dataset contains the extracted CSI features from 14 representative in-baggage objects of 4 different materials. The experiments are conducted in 3 different office environments with different sizes.",short_introduction:"The dataset of environment-independent in-baggage object identification system leveraging low-cost WiFi. The dataset contains the extracted CSI features from 14 representative in-baggage objects of 4 different materials. The experiments are conducted in 3 different office environments with different sizes."},
  {class:'1',category:"mmWave", application:"Authentication", src: "/medias/images/data&APIs/mmWave_intro.png", date:'Feb.6 2023', href: "#",subtitle: "MmWave-based Activity Recognition",name:"mmWave",introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. The data are all captured by the mmWave radar TI-AWR1642. We develop spatial-temporal heatmaps to extract motion features from raw mmWave signal.", short_introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. Our dataset can be used by fellow researchers to reproduce the original work or to further explore other machine-learning problems in the domain of mmWave signals."},
     {class:'1',category:"RFID", application:"Recognition", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+
+    {class:'1',category:"WiFi", application:"Recognition", src: "/medias/images/data&APIs/WiFi-Dataset2.png", date:'Feb.12 2023', href: "https://zenodo.org/record/7580687#.Y-kyuXbMJD8",subtitle: "Behavior-Based WiFi User Dataset",name:"WiFi Sensing",introduction:"This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment. . ",short_introduction:". This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment."},
     {class:'1',category:"Vibration", application:"Authentication", src: "/medias/featureimages/11.jpg", date:'Feb.2 2023', href: "https://zenodo.org/record/7582974#.Y-kZGOzMKrM",introduction: "introduction",name:"name",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
     
 
@@ -706,11 +708,15 @@ console.log(document.documentElement.scrollTop)
 <div style="background-image: url(/medias/images/bg-footer.png);background-size: cover;background-repeat:no-repeat; background-position:left top">
     <div class="container row"
          style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
+        <div class="col s12 m112 l12 copy-right">
             <br>
-            <div class="col s12 m8 l8" style="margin-left: 0px;">
-                <img src="/medias/logo.png" class="logo-img" alt="LOGO" height="80px">
-                <p style="font-size: 20px;"><strong>Contact Info</strong></p>
+            <div class="col s12 m8 l8" style="margin-left: 0px;margin-top: 30px;">
+                <img src="/medias/logo.png" class="logo-img" alt="LOGO" height="60px">
+                <p style="font-size: 24px;font-family: Poppins;color:white;"><strong>Contact info</strong></p>
+                <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://www.winlab.rutgers.edu/~yychen/"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; ">&nbsp Prof. Yingying Chen</a></span>
+                <br><br>
+                <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; ">&nbsp yingche@scarletmail.rutgers.edu</span>
+                <br><br><br>
             </div>
         </div>
     </div>

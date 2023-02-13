@@ -16,7 +16,7 @@ h1 {
     line-height: normal;
     color: rgb(71, 113, 168);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 h2 {
@@ -90,7 +90,7 @@ p_red{
     }
     h1{
         font-size: 30px;
-        margin-top: 28px;
+        margin-top: 54px;
     }
     h2{
         font-size: 28px;
@@ -99,7 +99,7 @@ p_red{
         font-size: 40px;
     }
     .title-top{
-        font-size: 32px;
+        font-size: 29px;
     }
 }
 
