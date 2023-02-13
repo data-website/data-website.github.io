@@ -250,7 +250,7 @@
 
 @media screen and (max-width: 993px) {
   .news-date__title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .project-tag {
     font-size: 16px;
@@ -259,6 +259,7 @@
 }
 @media screen and (max-width: 576px) {
   .news-date__title {
+    margin-bottom: -12px;
     font-size: 18px;
   }
   .project-tag {
