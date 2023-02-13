@@ -255,26 +255,27 @@
             
         
     </main>
-    <script>
-        var title_oUl=document.getElementsByClassName("title-left")[0];
-        if ((995<window.innerWidth && window.innerWidth<1182)||window.innerWidth<800){
-          console.log('1231')
-              title_oUl.innerHTML="";
-              title_oUl.innerHTML+="Nation-Wide<br>Testbeds"
-        }
-        console.log(title_oUl)
-        function retitle(){
-            if ((995<window.innerWidth && window.innerWidth<1182) ||window.innerWidth<800){
-              title_oUl.innerHTML="";
-              title_oUl.innerHTML+="Nation-Wide<br>Testbeds"
-         console.log('2')
-        }
-        }
-        window.addEventListener("resize", function () {
-            console.log(window.innerWidth);
-                    retitle();
-          }, false)
-      </script>
+    
+<script>
+    var title_oUl=document.getElementsByClassName("title-left")[0];
+  if ((995<window.innerWidth && window.innerWidth<1182)||window.innerWidth<800){
+    console.log('1231')
+        title_oUl.innerHTML="";
+        title_oUl.innerHTML+="&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds"
+  }
+  console.log(title_oUl)
+  function retitle(){
+      if ((995<window.innerWidth && window.innerWidth<1182) ||window.innerWidth<800){
+        title_oUl.innerHTML="";
+        title_oUl.innerHTML+="<span style='margin-top:-5px'>&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds<span>"
+   console.log('2')
+  }
+  }
+    window.addEventListener("resize", function () {
+        console.log(window.innerWidth);
+                retitle();
+      }, false)
+  </script>
     
     
 
