@@ -55,7 +55,7 @@
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
+            <div class="brand-logo" >
                 <a href="/" class="waves-effect waves-light" style="float: left;">
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
@@ -469,7 +469,7 @@
  
  {class:'1',category:"mmWave", application:"Authentication", src: "/medias/images/data&APIs/mmWave_intro.png", date:'Feb.6 2023', href: "https://zenodo.org/record/7634091#.Y-m9qezMJf0",subtitle: "MmWave-based Activity Recognition",name:"mmWave",introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. The data are all captured by the mmWave radar TI-AWR1642. We develop spatial-temporal heatmaps to extract motion features from raw mmWave signal.", short_introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. Our dataset can be used by fellow researchers to reproduce the original work or to further explore other machine-learning problems in the domain of mmWave signals."},
 
-    {class:'1',category:"RFID", application:"Authentication", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+    {class:'1',category:"RFID", application:"Authentication", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'July.15 2021', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
 
     {class:'1',category:"Vibration", application:"Authentication", src: "/medias/images/data&APIs/Vibration_system.jpg", date:'Feb.8 2023', href: "https://zenodo.org/record/7582974#.Y-kZGOzMKrM",subtitle: "Vibration-based Client Authentication",name:"Vibration",introduction:"The dataset provide vibration infomation extracted from wearble device. The dataset contains x,y,z axis movement positional data collected from 2 participants in ten's hours of on desk and on wrist motion activies. We develop a series of data processing methods to mitigate the impacts of noises and body movements.",short_introduction:"The dataset provide vibration infomation extracted from wearble device. The dataset contains x,y,z axis movement positional data collected from 2 participants in ten's hours of on desk and on wrist motion activies. We develop a series of data processing methods to mitigate the impacts of noises and body movements."},
     {class:'1',category:"Acoustic", application:"Authentication", src: "/medias/featureimages/10.jpg", href: "#",introduction: "introduction",name:"name"},
@@ -510,7 +510,8 @@
         }
         console.log(index)
         oUl.innerHTML+='                    <div class="article col s12 m6 l4" ><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
-            ele.category+
+            ele.category+'&nbsp<i class="category far fa-dot-circle"></i>&nbsp;'+
+            ele.application+
                             '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
                                 ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="font-size:22px;margin-left:-9px;font-weight:600;font-family:Poppins; margin-bottom:-12px;line-height:1.3">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
@@ -591,19 +592,19 @@ function screenInput(data, value){
 
 <script>
     var title_oUl=document.getElementsByClassName("title-left")[0];
-    if ((995<window.innerWidth && window.innerWidth<1182)||window.innerWidth<800){
-      console.log('1231')
-          title_oUl.innerHTML="";
-          title_oUl.innerHTML+="Nation-Wide<br>Testbeds"
-    }
-    console.log(title_oUl)
-    function retitle(){
-        if ((995<window.innerWidth && window.innerWidth<1182) ||window.innerWidth<800){
-          title_oUl.innerHTML="";
-          title_oUl.innerHTML+="Nation-Wide<br>Testbeds"
-     console.log('2')
-    }
-    }
+  if ((995<window.innerWidth && window.innerWidth<1182)||window.innerWidth<800){
+    console.log('1231')
+        title_oUl.innerHTML="";
+        title_oUl.innerHTML+="&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds"
+  }
+  console.log(title_oUl)
+  function retitle(){
+      if ((995<window.innerWidth && window.innerWidth<1182) ||window.innerWidth<800){
+        title_oUl.innerHTML="";
+        title_oUl.innerHTML+="<span style='margin-top:-5px'>&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds<span>"
+   console.log('2')
+  }
+  }
     window.addEventListener("resize", function () {
         console.log(window.innerWidth);
                 retitle();
@@ -617,13 +618,33 @@ function screenInput(data, value){
          style="margin-bottom: 0px !important;">
         <div class="col s12 m112 l12 copy-right">
             <br>
-            <div class="col s12 m8 l8" style="margin-left: 0px;margin-top: 30px;">
+            <div class="col s12 m12 l12" style="margin-left: 0px;margin-top: 30px;">
                 <img src="/medias/logo.png" class="logo-img" alt="LOGO" height="60px">
                 <p style="font-size: 24px;font-family: Poppins;color:white;"><strong>Contact info</strong></p>
+                <div class="col s12 m-auto l6">
                 <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://www.winlab.rutgers.edu/~yychen/"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Yingying Chen</a></span>
                 <br><br>
                 <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp yingche@scarletmail.rutgers.edu</span>
                 <br><br><br>
+                </div>
+                <div class="col s12 m-auto l6">
+                    <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://www.nyit.edu/bio/jcheng18"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Jerry Cheng</a></span>
+                    <br><br>
+                    <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp jcheng18@nyit.edu</span>
+                    <br><br><br>
+                </div>
+                <div class="col s12 m-auto l6">
+                    <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://cis.temple.edu/~yanwang/index.html"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Yan Wang</a></span>
+                    <br><br>
+                    <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp y.wang@temple.edu</span>
+                    <br><br><br>
+                </div>
+                <div class="col s12 m-auto l6">
+                    <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://mason.gmu.edu/~xguo8/"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Xiaonan Guo</a></span>
+                    <br><br>
+                    <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp xguo8 AT gmu.edu </span>
+                    <br><br><br>
+                </div>
             </div>
         </div>
     </div>

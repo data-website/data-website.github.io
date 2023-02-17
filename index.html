@@ -94,7 +94,7 @@
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
+            <div class="brand-logo" >
                 <a href="/" class="waves-effect waves-light" style="float: left;">
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
@@ -367,10 +367,9 @@
                   <br>
                 <i class="far fa-lightbulb" style="color: rgb(71, 113, 168);margin-top: 20px;font-size: 44px;"></i><span class="title-top">&nbsp Platform Information</span>
                 </div>
-                <br><br>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-top: 10px;">
             <div class="col s12 m12 l7">
                 <p style="margin-top: 0px;">"Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds" is a collaborative platform to build a large-scale, mobile edge sensing and computing infrastructure to provide practical experimental environments, rich user tools and services, and data/model sharing. Our project is supported by the US National Science Foundation CISE Community Infrastructure (CCRI) Award.
                 </p>
@@ -396,7 +395,6 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
-                <br>
                 <h1 style="font-weight: 600;line-height: normal;text-align: center;">Platform Statistics</h1>
                 <br>
                 <p style="margin-top: -1px;">
@@ -457,9 +455,8 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
-                <br>
                 <h1 style="font-weight: 600;line-height: normal;text-align: center;">News</h1>
-                <br><br>
+                <br>
             </div>
         </div>
         <div class="row" style="margin-top: -40px;" data-aos="fade-up">
@@ -553,7 +550,7 @@
     {class:'1',category:"WiFi", application:"Recognition", src: "/medias/images/data&APIs/WiFi-Dataset2.png", date:'Feb.12 2023', href: "https://zenodo.org/record/7582974#.Y-kZGOzMKrM",subtitle: "Behavior-Based WiFi User Dataset",name:"WiFi Sensing",introduction:"This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment. . ",short_introduction:"This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment."},
 
     
-    {class:'1',category:"RFID", application:"Authentication", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'Feb.2 2023', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
+    {class:'1',category:"RFID", application:"Authentication", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'July.15 2021', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based User Verification",name:"BioTag",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
     
 
     {class:'1',category:"Acoustic", application:"Authentication", src: "/medias/featureimages/10.jpg", href: "#",introduction: "introduction",name:"name"},
@@ -573,13 +570,16 @@
     }
  }
  
- var news_arr=arr.splice(0,4);
- var oUl=document.getElementsByClassName("swiper-wrapper")[0];
+ var news_arr=arr.splice(0,5);
+ var oUl=document.getElementsByClassName("wrapper")[0];
+
  function renderPage(data) {
     console.log(data);
     oUl.innerHTML = "";
     data.forEach(function (ele, index, self) {
-        oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
+        // oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
+        //     ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
+        oUl.innerHTML+=' <div class="col m6 l4" style="margin-top:40px"><div class="card" style="height:580px"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
             ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
         console.log('True');
      });
@@ -701,7 +701,7 @@ console.log(document.documentElement.scrollTop)
       console.log(txt_home);
         txt_home.innerHTML="";
         txt_home.innerHTML+='<div class="title center-align" style="margin-top:60px;margin-bottom:-50px">'+
-                '<div class="title-top">Platform Information</div></div>';
+                '<div class="title-top">Platform Information</div></div><br>';
   }
 
 </script>
@@ -715,13 +715,33 @@ console.log(document.documentElement.scrollTop)
          style="margin-bottom: 0px !important;">
         <div class="col s12 m112 l12 copy-right">
             <br>
-            <div class="col s12 m8 l8" style="margin-left: 0px;margin-top: 30px;">
+            <div class="col s12 m12 l12" style="margin-left: 0px;margin-top: 30px;">
                 <img src="/medias/logo.png" class="logo-img" alt="LOGO" height="60px">
                 <p style="font-size: 24px;font-family: Poppins;color:white;"><strong>Contact info</strong></p>
+                <div class="col s12 m-auto l6">
                 <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://www.winlab.rutgers.edu/~yychen/"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Yingying Chen</a></span>
                 <br><br>
                 <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp yingche@scarletmail.rutgers.edu</span>
                 <br><br><br>
+                </div>
+                <div class="col s12 m-auto l6">
+                    <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://www.nyit.edu/bio/jcheng18"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Jerry Cheng</a></span>
+                    <br><br>
+                    <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp jcheng18@nyit.edu</span>
+                    <br><br><br>
+                </div>
+                <div class="col s12 m-auto l6">
+                    <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://cis.temple.edu/~yanwang/index.html"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Yan Wang</a></span>
+                    <br><br>
+                    <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp y.wang@temple.edu</span>
+                    <br><br><br>
+                </div>
+                <div class="col s12 m-auto l6">
+                    <img src="/medias/images/logo/contact_person.png" alt="LOGO" height="24px" style="vertical-align: middle;"/><a target="_self" href="https://mason.gmu.edu/~xguo8/"><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle;color:rgb(245, 241, 241); ">&nbsp Prof. Xiaonan Guo</a></span>
+                    <br><br>
+                    <img src="/medias/images/logo/email.png" alt="LOGO" height="18px" style="vertical-align: middle;"/><span style="font-size: 18px;font-family: Mon,sans-serif;vertical-align: middle; color:rgb(245, 241, 241);">&nbsp xguo8 AT gmu.edu </span>
+                    <br><br><br>
+                </div>
             </div>
         </div>
     </div>

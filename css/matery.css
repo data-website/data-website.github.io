@@ -683,7 +683,7 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 60px;
+    font-size: 44px;
     line-height: 1.4;
     margin-bottom: 20px;
     position: relative;
@@ -691,7 +691,7 @@ header .go-back i {
 
 .bg-cover .description {
     font-weight: 300;
-    font-size: 44px;
+    font-size: 40px;
     line-height: 1.4em;
     color: #eee;
 }
@@ -700,7 +700,7 @@ header .go-back i {
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .bg-cover .title {
-        font-size: 60px;
+        font-size: 44px;
         margin-bottom: 20px;
         position: relative;
     }
@@ -709,13 +709,13 @@ header .go-back i {
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .bg-cover .title {
-        font-size: 44px;
+        font-size: 36px;
         margin-bottom: 20px;
         position: relative;
     }
 
     .bg-cover .description {
-        font-size: 38px;
+        font-size: 32px;
         line-height: 1.4em;
         color: #eee;
     }
@@ -723,12 +723,12 @@ header .go-back i {
 
 @media only screen and (max-width: 601px) {
     .bg-cover .title {
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 20px;
         position: relative;
     }
     .bg-cover .description {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 1.4em;
         color: #eee;
     }
