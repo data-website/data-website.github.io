@@ -1053,7 +1053,7 @@ article .card:hover{
 article .card {
     border-radius: 10px;
     overflow: hidden;
-    max-height: 310px;
+    max-height: 320px;
 }
 
 article .card-image {
@@ -1067,7 +1067,7 @@ article .card-image img {
     border-radius: 0.3rem;
     opacity: .7;
     
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 article .tag-image img {
