@@ -339,7 +339,7 @@ mark {
 
 .card .card-title{
     font-family: Mon;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.35;
 }
 .container .row {
@@ -1180,7 +1180,7 @@ article .article-tags .chip {
         table-layout: fixed;
     }
     .card .card-title{
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
 }
 
@@ -1191,7 +1191,7 @@ article .article-tags .chip {
         max-height: 700px !important;
     }
     .card .card-title{
-        font-size: 18px;
+        font-size: 20px;
     }
     .article {
         margin-top: 10px;
@@ -1686,7 +1686,7 @@ thead {
 
 .cd-timeline-content .card {
     margin: 0;
-    max-height: 325px;
+    max-height: 320px;
 }
 .cd-timeline-content .card .card-image img{
     margin: 0;
