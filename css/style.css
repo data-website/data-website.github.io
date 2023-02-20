@@ -241,8 +241,8 @@
   align-items: center;
   border-radius: 4px;
   display: inline-flex;
-  font-size: 18px;
-  height: 30px;
+  font-size: 16px;
+  height: 26px;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.2;
@@ -255,11 +255,11 @@
 
 @media screen and (max-width: 993px) {
   .news-date__title {
-    font-size: 18px;
+    font-size: 17px;
   }
   .project-tag {
     font-size: 16px;
-    height: 26px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 576px) {
