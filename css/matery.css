@@ -323,7 +323,7 @@ mark {
 }
 .card {
     border-radius: 10px;
-    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
 }
 
 .card .card-image img {
@@ -651,9 +651,6 @@ header .go-back i {
     transform: translate3d(0px, 0px, 0px);
 }
 
-.index-cover {
-    height: 100vh;
-}
 
 .post-cover {
     height: 40vh !important;

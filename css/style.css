@@ -130,6 +130,10 @@
     width: 70px;
   }
 }
+.card:hover{
+  box-shadow: 0 3px 3px #747373, 0 3px 3px #797676;
+}
+
 .news__item {
   padding: 30px;
   color: #fff;
@@ -148,7 +152,7 @@
   }
   .news__item:hover .news__img {
     box-shadow: none;
-    margin-top: -15px;
+    margin-top: -5px;
   }
 
 }
