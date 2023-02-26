@@ -129,7 +129,7 @@ p_red{
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .container {
-        width: 90%;
+        width: 100%;
     }
 
     .head-container {
@@ -152,7 +152,7 @@ p_red{
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 1300px) {
     .container {
-        width: 90%;
+        width: 100%;
     }
 
     .head-container {
