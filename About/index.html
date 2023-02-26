@@ -458,6 +458,18 @@
 <div class="progress-bar"></div>
 
 
+<script>
+    var window_width=window.innerWidth;
+    var footer_oUl=document.getElementsByClassName('footer_column');
+    if(window_width<933){
+        footer_oUl[0].outerHTML=footer_oUl[0].outerHTML.replace('style="width: 29%;"',' ');
+        footer_oUl[1].outerHTMLfooter_oUl[1].outerHTML.replace('style="width: 21%;"',' ');
+        footer_oUl[2].outerHTMLfooter_oUl[2].outerHTML.replace('style="width: 22%;"',' ');
+        footer_oUl[3].outerHTMLfooter_oUl[3].outerHTML.replace('style="width: 28%;"',' ');
+        console.log(footer_oUl);
+    }
+</script>
+
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
