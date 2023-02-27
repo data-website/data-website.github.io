@@ -279,6 +279,9 @@
     font-size: 14px;
     height: 24px;
   }
+  .footer_column{
+    width: 100% !important;
+  }
 }
 .news__txt {
   color: #333232;
