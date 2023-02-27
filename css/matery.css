@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    margin: 50px 0 30px 0px;
+    margin: 30px 0 20px 0px;
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
     font-size: 44px;
@@ -94,6 +94,8 @@ p_red{
     }
     h2{
         font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: -10px;
     }
     h3{
         font-size: 40px;
@@ -117,6 +119,8 @@ p_red{
     }
     h2{
         font-size: 36px;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
     h3{
         font-size: 54px;
