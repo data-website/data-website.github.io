@@ -1017,11 +1017,11 @@ header .go-back i {
 
 
 .article:hover {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .article {
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 article a {
     margin-right: 0 !important;
@@ -1195,7 +1195,7 @@ article .article-tags .chip {
     }
     .article {
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 40px;
     }
 }
 
