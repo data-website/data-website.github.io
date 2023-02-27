@@ -518,18 +518,17 @@
   
   <script> 
    var arr=[
-   {class:'1',category:"Vibration", application:"User Authentication", src: "/medias/images/data&APIs/Vibration_system.jpg", date:'Feb.6 2023', href: "https://zenodo.org/record/7582974#.Y-kZGOzMKrM",subtitle: "Vibration-based Client Authentication",name:"Vibration",introduction:"The dataset provide vibration information extracted from wearable device. The dataset contains x,y,z axis movement positional data collected from 2 participants in ten's hours of on desk and on wrist motion activities. We develop a series of data processing methods to mitigate the impacts of noises and body movements.",short_introduction:"The dataset provide vibration information extracted from wearable device. The dataset contains x,y,z axis movement positional data collected from 2 participants in ten's hours of on desk and on wrist motion activities. We develop a series of data processing methods to mitigate the impacts of noises and body movements."},
+    {class:'1',category:"Vibration", application:"User Authentication", src: "/medias/images/data&APIs/Vibration_system.jpg", date:'Feb.6 2023', href: "https://zenodo.org/record/7582974#.Y-kZGOzMKrM",subtitle: "Vibration-based Client Authentication",name:"Vibration",introduction:"The dataset provide vibration information extracted from wearable device. The dataset contains x,y,z axis movement positional data collected from 2 participants in ten's hours of on desk and on wrist motion activities. We develop a series of data processing methods to mitigate the impacts of noises and body movements.",short_introduction:"The dataset provide vibration information extracted from wearable device. The dataset contains x,y,z axis movement positional data collected from 2 participants in ten's hours of on desk and on wrist motion activities. We develop a series of data processing methods to mitigate the impacts of noises and body movements."},
    {class:'1',category:"mmWave", application:"Activity Recognition", src: "/medias/images/data&APIs/mmWave_intro.png", date:'Dem.6 2021', href: "https://zenodo.org/record/7678020#.Y_v5Luxudf0",subtitle: "MmWave-based Activity Recognition",name:"mmWave",introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. The data are all captured by the mmWave radar TI-AWR1642. We develop spatial-temporal heatmaps to extract motion features from raw mmWave signal.", short_introduction:"The mmWave-based activity dataset is used for people daily activity recognition. It contains two sub-datasets. The first dataset (FA Dataset) contains 14 common daily activities. This second one (EA Dataset) contains 5 kinds of eating activities. Our dataset can be used by fellow researchers to reproduce the original work or to further explore other machine-learning problems in the domain of mmWave signals."},
 
 {class:'1',category:"RFID", application:"User Authentication", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'July.15 2021', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based Continuous User Verification",name:"RFID Sensing",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 10 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 10 participants."},
 {class:'1',category:"WiFi", application:"Object Detection", src: "/medias/images/data&APIs/Object_detection.png", date:'Feb.11 2020', href: "https://zenodo.org/record/7631168#.Y-fvAHbMIQ8",subtitle: "WiFi-based Object Detection",name:"WiFi Sensing",introduction:"The dataset of environment-independent in-baggage object identification system leveraging low-cost WiFi. The dataset contains the extracted CSI features from 14 representative in-baggage objects of 4 different materials. The experiments are conducted in 3 different office environments with different sizes.",short_introduction:"The dataset of environment-independent in-baggage object identification system leveraging low-cost WiFi. The dataset contains the extracted CSI features from 14 representative in-baggage objects of 4 different materials. The experiments are conducted in 3 different office environments with different sizes."},
  
    {class:'1',category:"WiFi", application:"Activity Recognition", src: "/medias/images/data&APIs/WiFi_Dataset2.png", date:'Feb.11 2019', href: "https://zenodo.org/record/7580687#.Y-kyuXbMJD8",subtitle: "Behavior-Based WiFi User Dataset",name:"WiFi Sensing",introduction:"This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment. . ",short_introduction:"This dataset contains the physiological characteristics captured by WiFi from 10 participants for 10 different activities. Each participant performs 20 rounds for each activity. The experiments are conducted in two different environments, the campus office, and the home apartment."},
- 
-]
+ ]
    var num_data=0;
    var num_api=0;
-   var num_tutorial=1;
+   var num_tutorial=0;
    var num_contributor=9;
    var time_duration=3000;
    for(var i = 0; i < arr.length; i++){
@@ -539,7 +538,8 @@
           num_api+=1;
       }
    }
-   
+   num_api=0;
+
    var news_arr=arr.splice(0,5);
    var oUl=document.getElementsByClassName("wrapper")[0];
   
@@ -550,7 +550,7 @@
           // oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
           //     ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
           oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="'+ele.href+'" class="news__item"><div class="news__img col s12 m6 l4" style="align-items: center;text-align:center"><img src="'+
-              ele.src+'" alt="news" style="max-height:180px;width:95%;align-items: center;"/></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt" style="margin-bottom: 15px;">'+ele.short_introduction+'</p></a></div></div>';
+              ele.src+'" alt="news" style="max-height:180px;width:95%;align-items: center"/></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
           console.log('True');
        });
   }
@@ -591,30 +591,35 @@
         $this.innerHTML = initial; 
        }, 30); 
       } 
-     
+      
+    if(num_data!=0){
       NumAutoPlusAnimation("dataset", { 
        time: time_duration, 
        num: num_data, 
        regulator: 50 
       }) 
-   
+    }
+    if(num_api!=0){
     NumAutoPlusAnimation("api", { 
      time: time_duration, 
      num: num_api, 
      regulator: 50 
     }) 
-  
+  }
+  if(num_tutorial!=0){
     NumAutoPlusAnimation("tutorial", { 
      time: time_duration, 
      num: num_tutorial, 
      regulator: 50 
     }) 
-
+  }
+  if(num_contributor!=0){
     NumAutoPlusAnimation("contributors", { 
      time: time_duration, 
      num: num_contributor, 
      regulator: 50 
     }) 
+  }
     
     window.onscroll = function() {
        scrollFunction()
@@ -630,24 +635,30 @@
           
   console.log(document.documentElement.scrollTop)
         if (document.documentElement.scrollTop > top_value-window.innerHeight && document.documentElement.scrollTop < bottom-window.innerHeight+100) {
-          NumAutoPlusAnimation("dataset", { 
+          
+    if(num_data!=0){
+      NumAutoPlusAnimation("dataset", { 
        time: time_duration, 
        num: num_data, 
        regulator: 50 
       }) 
+    }
    
+    if (num_api!=0){
     NumAutoPlusAnimation("api", { 
      time: time_duration, 
      num: num_api, 
      regulator: 50 
     }) 
-  
+  }
+  if (num_tutorial!=0){
     NumAutoPlusAnimation("tutorial", { 
      time: time_duration, 
      num: num_tutorial, 
      regulator: 50 
     }) 
-
+  }
+  if(num_contributor!=0){
     NumAutoPlusAnimation("contributors", { 
      time: time_duration, 
      num: num_contributor, 
@@ -655,6 +666,7 @@
     }) 
    }
     }
+  }
      </script> 
   <script>
     var title_oUl=document.getElementsByClassName("title-left")[0];
