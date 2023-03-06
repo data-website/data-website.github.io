@@ -694,7 +694,7 @@ header .go-back i {
     font-weight: 300;
     font-size: 40px;
     line-height: 1.4em;
-    color: #eee;
+    color: #f3efef;
 }
 
 
@@ -718,7 +718,7 @@ header .go-back i {
     .bg-cover .description {
         font-size: 32px;
         line-height: 1.4em;
-        color: #eee;
+        color: #f7f6f6;
     }
 }
 
@@ -731,7 +731,7 @@ header .go-back i {
     .bg-cover .description {
         font-size: 26px;
         line-height: 1.4em;
-        color: #eee;
+        color: #fafafa;
     }
 }
 
