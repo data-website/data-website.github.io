@@ -346,6 +346,13 @@ mark {
     font-size: 20px;
     line-height: 1.35;
 }
+
+.card .card-title-2{
+    font-family: Mon;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
 .container .row {
     margin-bottom: 0;
 }
@@ -1186,6 +1193,9 @@ article .article-tags .chip {
     .card .card-title{
         font-size: 20px !important;
     }
+    .card .card-title-2{
+        font-size: 17px !important;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1196,6 +1206,9 @@ article .article-tags .chip {
     }
     .card .card-title{
         font-size: 20px;
+    }
+    .card .card-title-2{
+        font-size: 17px;
     }
     .article {
         margin-top: 10px;
