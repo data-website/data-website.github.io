@@ -551,7 +551,7 @@
   
    function renderPage(data) {
       console.log(data);
-      oUl.innerHTML = "";
+      oUl.innerHTML = '<div class="col m12 l12 aos-init aos-animate" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="https://data-website.github.io/Workshop/" class="news__item"><hr><div class="news__title"><span class="project-tag">November 2023</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop has been successfully held on 11/16/2023.</span></div><p class="news__txt"></p></a></div></div>';
       data.forEach(function (ele, index, self) {
           // oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
           //     ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
