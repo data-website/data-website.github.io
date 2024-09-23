@@ -340,7 +340,7 @@
   
   
   
-      <section class="intro" style="background-color: #e9eff1;background-image: url(/medias/images/circle.png);background-size: cover;background-repeat:no-repeat; background-position:left top">
+      <section class="intro" style="background-color: #e9eff1;background-image: url(/medias/images/Picture0.png);background-size: cover;background-repeat:no-repeat; background-position:left top;">
       <div class="container">
           <div class="row">
               <div class="col s12 m12 l12">
@@ -551,20 +551,20 @@
   
    function renderPage(data) {
       console.log(data);
-      oUl.innerHTML=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="" class="news__item"><hr><div class="news__title"><span class="project-tag">June 2024</span></div><div class="news-date"><span class="news-date__title">Team discussion and feedback meeting has been held.</span></div>';
-            oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="" class="news__item"><hr><div class="news__title"><span class="project-tag">January 2024</span></div><div class="news-date"><span class="news-date__title">Available Sensing Testbeds and Shared Datasets feedback has been collected.</span></div>';
-      oUl.innerHTML += '<div class="col m12 l12 aos-init aos-animate" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="https://data-website.github.io/Workshop/" class="news__item"><hr><div class="news__title"><span class="project-tag">November 2023</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop has been successfully held on 11/16/2023.</span></div><p class="news__txt"></p></a></div></div>';
+      oUl.innerHTML=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="" class="news__item"><div class="news__title"><span class="project-tag">June 2024</span></div><div class="news-date"><span class="news-date__title">Team discussion and feedback meeting has been held.</span></div>';
+            oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="" class="news__item"><div class="news__title"><span class="project-tag">January 2024</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop feedback has been collected.</span></div>';
+      oUl.innerHTML += '<div class="col m12 l12 aos-init aos-animate" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="https://data-website.github.io/Workshop/" class="news__item"><div class="news__title"><span class="project-tag">November 2023</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop has been successfully held on 11/16/2023.</span></div><p class="news__txt"></p></a></div></div>';
       
       data.forEach(function (ele, index, self) {
           // oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
           //     ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
-          oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="'+ele.href+'" class="news__item"><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+' Dataset is Available Online.'+'</span></div>';
+          oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="'+ele.href+'" class="news__item"><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+' Dataset is Available Online.'+'</span></div>';
           console.log('True');
        });
 
        oUl.innerHTML+='<section class="intro" style="background-color: #e9eff1;background-image: url(/medias/images/bg-lines.png);background-size: cover;background-repeat:no-repeat; background-position:left top"><div class="container"><div class="row">'+
               '<div class="col s12 m12 l12"><br><br>'+
-                  '<h1 style="font-weight: 600;line-height: normal;text-align: center;">Dataset</h1>'+
+                  '<h1 style="font-weight: 600;line-height: normal;text-align: center;">Available Sensing Testbeds and Shared Datasets</h1>'+
                   '<br>'+
               '</div>'+
           '</div>'
@@ -572,8 +572,8 @@
       data.forEach(function (ele, index, self) {
           // oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
           //     ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
-          oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="'+ele.href+'" class="news__item"><div class="news__img col s12 m6 l4" style="align-items: center;text-align:center"><img src="'+
-              ele.src+'" alt="news" style="max-height:160px;width:80%;align-items: center"/></div><hr><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
+          oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:110%"><a href="'+ele.href+'" class="news__item"><div class="news__img col s12 m6 l4" style="align-items: center;text-align:center;margin-top:-30px;"><img src="'+
+              ele.src+'" alt="news" style="max-height:90%;width:85%;align-items: center"/></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
           console.log('True');
        });
   }

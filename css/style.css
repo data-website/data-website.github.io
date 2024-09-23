@@ -208,8 +208,8 @@
   color: #000000;
   display: block;
   font-size: 22px;
-  margin-top: 0px;
-  margin-bottom: -5px;
+  margin-top: 5px;
+  margin-bottom: 3px;
   font-family: Poppins-bold, sans-serif;
   font-weight: 500;
   line-height: 1.35;
@@ -286,7 +286,7 @@
 .news__txt {
   color: #333232;
   margin: 10px 0;
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   opacity: .0.75;
@@ -326,7 +326,8 @@
     width: 70%;
   }
   .news__txt{
-      font-size: 16px;
+    line-height: 1.5;
+      font-size: 19px;
   }
 }
 
