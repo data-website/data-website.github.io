@@ -748,7 +748,7 @@ header .go-back i {
     .bg-cover .title {
         font-size: 32px;
         line-height: 1.3;
-        margin-top: 10vh;
+        margin-top: 12vh;
         position: relative;
     }
 }
@@ -757,7 +757,7 @@ header .go-back i {
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .bg-cover .title {
         font-size: 27px;
-        margin-top: 10vh;
+        margin-top: 12vh;
         line-height: 1.25;
         position: relative;
     }
@@ -774,6 +774,7 @@ header .go-back i {
         font-size: 20px;
         line-height: 1.2;
         margin-bottom: 20px;
+        margin-top: 10vh;
         position: relative;
     }
     .bg-cover .description {
