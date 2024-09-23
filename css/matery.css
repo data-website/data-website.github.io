@@ -203,16 +203,16 @@ p_red{
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 1800px) {
     h1{
-        font-size: 40px;
+        font-size: 36px;
     }
     h2{
-        font-size: 40px;
+        font-size: 36px;
     }
     p{
         font-size: 22px;
     }
     .title-top{
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 hr {
