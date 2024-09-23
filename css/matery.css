@@ -203,13 +203,16 @@ p_red{
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 1800px) {
     h1{
-        font-size: 50px;
+        font-size: 40px;
     }
     h2{
-        font-size: 50px;
+        font-size: 40px;
     }
     p{
         font-size: 22px;
+    }
+    .title-top{
+        font-size: 40px;
     }
 }
 hr {
@@ -734,7 +737,7 @@ header .go-back i {
 
 @media only screen and (min-width: 1460px) {
     .bg-cover .title {
-        font-size: 40px;
+        font-size: 38px;
         line-height: 1.4;
         margin-bottom: 20px;
         position: relative;
