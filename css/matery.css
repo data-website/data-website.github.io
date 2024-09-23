@@ -12,7 +12,7 @@ body {
 h1 {
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 36px;
+    font-size: 32px;
     line-height: normal;
     color: rgb(70, 113, 168);
     text-align: center;
@@ -23,7 +23,7 @@ h2 {
     margin: 30px 0 20px 0px;
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     line-height: normal;
 }
@@ -32,7 +32,7 @@ h3 {
     margin: 50px 0 30px 0px;
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: bold;
     line-height: normal;
     text-align: center;
@@ -102,7 +102,7 @@ p_red{
         font-size: 18px;
     }
     h1{
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 54px;
     }
     h2{
@@ -111,7 +111,7 @@ p_red{
         margin-bottom: 0px;
     }
     h3{
-        font-size: 40px;
+        font-size: 32px;
     }
     .title-top{
         font-size: 29px;
@@ -133,16 +133,16 @@ p_red{
         font-size: 18px;
     }
     h1{
-        font-size: 36px;
+        font-size: 32px;
         margin-top: 50px;
     }
     h2{
-        font-size: 36px;
+        font-size: 32px;
         margin-top: 10px;
         margin-bottom: 0px;
     }
     h3{
-        font-size: 54px;
+        font-size: 34px;
     }
     .title-top{
         font-size: 36px;
@@ -203,10 +203,10 @@ p_red{
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 1800px) {
     h1{
-        font-size: 54px;
+        font-size: 50px;
     }
     h2{
-        font-size: 54px;
+        font-size: 50px;
     }
     p{
         font-size: 22px;
@@ -689,10 +689,10 @@ header .go-back i {
 
 
 .post-cover {
-    height: 20vh !important;
+    height: 25vh !important;
 }
 .index-cover {
-    height: 20vh !important;
+    height: 30vh !important;
 }
 
 .bg-cover:after {
@@ -736,7 +736,7 @@ header .go-back i {
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .bg-cover .title {
-        font-size: 40px;
+        font-size: 36px;
         margin-bottom: 20px;
         position: relative;
     }
@@ -759,7 +759,7 @@ header .go-back i {
 
 @media only screen and (max-width: 601px) {
     .bg-cover .title {
-        font-size: 26px;
+        font-size: 21px;
         margin-bottom: 20px;
         position: relative;
     }
