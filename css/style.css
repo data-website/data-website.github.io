@@ -135,7 +135,7 @@
 }
 
 .news__item {
-  padding: 30px;
+  padding: 25px 25px 5px 25px;
   color: #fff;
   border-radius: 10px;
   display: block;
@@ -173,7 +173,7 @@
 
 @media screen and (max-width: 992px) {
   .news__item {
-    padding: 30px;
+    padding: 25px 25px 10px 25px;
   }
 }
 @media screen and (max-width: 576px) {
