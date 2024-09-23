@@ -90,7 +90,7 @@ p_red{
 .title-top{
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 38px;
+    font-size: 32px;
     color: rgb(71, 113, 168);
 }
 
@@ -114,7 +114,7 @@ p_red{
         font-size: 32px;
     }
     .title-top{
-        font-size: 29px;
+        font-size: 26px;
     }
     .table-word {
         font-size: 15px;
@@ -145,7 +145,7 @@ p_red{
         font-size: 34px;
     }
     .title-top{
-        font-size: 36px;
+        font-size: 30px;
     }
     .table-word {
         font-size: 15px;
@@ -719,7 +719,7 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.4;
     margin-bottom: 20px;
     position: relative;
@@ -736,7 +736,7 @@ header .go-back i {
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .bg-cover .title {
-        font-size: 36px;
+        font-size: 32px;
         margin-bottom: 20px;
         position: relative;
     }
@@ -745,7 +745,7 @@ header .go-back i {
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .bg-cover .title {
-        font-size: 30px;
+        font-size: 27px;
         margin-bottom: 20px;
         position: relative;
     }
@@ -759,7 +759,7 @@ header .go-back i {
 
 @media only screen and (max-width: 601px) {
     .bg-cover .title {
-        font-size: 21px;
+        font-size: 20px;
         margin-bottom: 20px;
         position: relative;
     }
