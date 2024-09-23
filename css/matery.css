@@ -32,7 +32,7 @@ h3 {
     margin: 50px 0 30px 0px;
     font-family: Poppins-bold,sans-serif;
     font-weight:600;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: bold;
     line-height: normal;
     text-align: center;
@@ -689,10 +689,10 @@ header .go-back i {
 
 
 .post-cover {
-    height: 30vh !important;
+    height: 20vh !important;
 }
 .index-cover {
-    height: 45vh !important;
+    height: 20vh !important;
 }
 
 .bg-cover:after {

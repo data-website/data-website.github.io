@@ -328,7 +328,6 @@
           <div class="row">
               <div class="col s12 m12 l12">
                   <div class="title center-align" id="fa-title">
-                    <br>
                   <i class="far fa-lightbulb" style="color: rgb(71, 113, 168);font-size: 44px;"></i><span class="title-top">&nbsp Platform Information</span>
                   </div>
               </div>
@@ -342,10 +341,10 @@
                   <img src="/medias/images/logo/nsf-small.png" width="110px" style="margin-bottom: 10px;" draggable="false" >
               </div>
                   <div class="col s12 m12 l5" style="text-align: center;margin-top: -10px;">
-                    <img src="/medias/images/logo/Logo-Rutgers-University-removebg-preview.png" width="232px" draggable="false" data-aos="zoom-out">
-                    <img src="/medias/images/logo/nyit-l.png" width="190px" draggable="false" data-aos="zoom-in">
-                    <img src="/medias/images/logo/TempleLogo-removebg-preview.png" width="230px" draggable="false" data-aos="zoom-in">
-                    <img src="/medias/images/logo/GeorgeMason-removebg-preview.png" width="190px" draggable="false" data-aos="zoom-in">
+                    <img src="/medias/images/logo/Logo-Rutgers-University-removebg-preview.png" width="232px" draggable="false">
+                    <img src="/medias/images/logo/nyit-l.png" width="190px" draggable="false" >
+                    <img src="/medias/images/logo/TempleLogo-removebg-preview.png" width="230px" draggable="false" >
+                    <img src="/medias/images/logo/GeorgeMason-removebg-preview.png" width="190px" draggable="false" >
                   </div>
                   
           </div>
@@ -424,7 +423,7 @@
                   <br><br><br>
               </div>
           </div>
-          <div class="row" style="margin-top: -40px;" data-aos="fade-up">
+          <div class="row" style="margin-top: -40px;">
               <div class="col s12 m12 l12">
                   <div class="wrapper" style="margin-top: -60px;">
                       <div class="news-slider">
@@ -534,14 +533,14 @@
   
    function renderPage(data) {
       console.log(data);
-      oUl.innerHTML=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card"><a href="" class="news__item"><div class="news__title"><span class="project-tag">June 2024</span></div><div class="news-date"><span class="news-date__title">Team discussion and feedback meeting has been held.</span></div>';
-            oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="" class="news__item"><div class="news__title"><span class="project-tag">January 2024</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop feedback has been collected.</span></div>';
-      oUl.innerHTML += '<div class="col m12 l12 aos-init aos-animate" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="https://data-website.github.io/Workshop/" class="news__item"><div class="news__title"><span class="project-tag">November 2023</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop has been successfully held on 11/16/2023.</span></div></a></div></div>';
+      oUl.innerHTML=' <div class="col m12 l12" style="margin-top:0px"><div class="card"><a href="" class="news__item"><div class="news__title"><span class="project-tag">June 2024</span></div><div class="news-date"><span class="news-date__title">Team discussion and feedback meeting has been held.</span></div>';
+            oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px"><div class="card" style="height:100%"><a href="" class="news__item"><div class="news__title"><span class="project-tag">January 2024</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop feedback has been collected.</span></div>';
+      oUl.innerHTML += '<div class="col m12 l12" style="margin-top:0px" ><div class="card" style="height:100%"><a href="https://data-website.github.io/Workshop/" class="news__item"><div class="news__title"><span class="project-tag">November 2023</span></div><div class="news-date"><span class="news-date__title">CCRI Workshop has been successfully held on 11/16/2023.</span></div></a></div></div>';
       
       data.forEach(function (ele, index, self) {
           // oUl.innerHTML+=' <div class="news-slider__item swiper-slide" style="margin-left:20px"><div class="card"><a href="'+ele.href+'" class="news__item"><div class="news__img"><img src="'+
           //     ele.src+'" alt="news" /></div><hr><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+'</span></div><p class="news__txt">'+ele.short_introduction+'</p></a></div></div>';
-          oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" data-aos="fade-up"><div class="card" style="height:100%"><a href="'+ele.href+'" class="news__item"><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+' Dataset is Available Online.'+'</span></div>';
+          oUl.innerHTML+=' <div class="col m12 l12" style="margin-top:0px" ><div class="card" style="height:100%"><a href="'+ele.href+'" class="news__item"><div class="news__title"><span class="project-tag">'+ele.date+'</span></div><div class="news-date"><span class="news-date__title">'+ele.name+': '+ele.subtitle+' Dataset is Available Online.'+'</span></div>';
           console.log('True');
        });
 
