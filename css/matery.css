@@ -1072,6 +1072,11 @@ header .go-back i {
 .article:hover {
     margin-bottom: 40px;
 }
+
+.Algo{
+    margin-top:10px;
+}
+
 .article {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -1106,7 +1111,7 @@ article .card:hover{
 article .card {
     border-radius: 10px;
     overflow: hidden;
-    max-height: 320px;
+    max-height: 380px;
 }
 
 article .card-image {

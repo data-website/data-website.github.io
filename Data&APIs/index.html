@@ -363,16 +363,14 @@
             It provides some algorithms in our papers by using our datasets. Coming soon!
         </p>
         </div>
-
-            </div>
-            </div>
+        </div>
+    </div>
 </div>
 
 <div class="article container">
     <article id="prenext-posts" class="application prev-next articles">
         <div class="row article-row">
             <div class="col s12 m-auto l12">
-            
             <div class="article col s12 m6 l4" data-aos="fade-up" data-aos="fade-up">
                 <div class="article-badge left-badge text-color">
                     <i class="far fa-dot-circle"></i>&nbsp;Current
@@ -467,8 +465,21 @@
 	   {class:'1',category:"mmWave", application:"Activity Recognition", src: "/medias/images/data&APIs/mmWave_eating.png", date:'December 2021', href: "https://zenodo.org/doi/10.5281/zenodo.7793608",subtitle: "MmWave-based Eating Activity Recognition",name:"mmWave",introduction:"The mmWave-based fitness activity dataset is used for people eating activity recognition task. It contains 5 common eating activities (e.g., eating with fork, eating with chopsticks, etc.). The data are all captured by the mmWave radar TI-AWR1642. We develop spatial-temporal heatmaps to extract fitness activity features from mmWave signals.", short_introduction:"The mmWave-based fitness activity dataset is used for people eating activity recognition task. It contains 5 common eating activities (e.g., eating with fork, eating with chopsticks, etc.). The data are all captured by the mmWave radar TI-AWR1642. We develop spatial-temporal heatmaps to extract fitness activity features from mmWave signals."},
 	   
      {class:'1',category:"RFID", application:"User Authentication", src: "/medias/images/data&APIs/RFID_BioTag.png", date:'July 2021', href: "https://zenodo.org/record/7466946#.Y96Qa3aZMSE",subtitle: "RFID-based Continuous User Verification",name:"RFID Sensing",introduction:"BioTag RFID dataset is initially collected for continuous user verification. The dataset contains raw RFID samples from two RFID tags attached to the chest and abdomen of 41 participants. The RFID samples capture users' unique physiological characteristics, such as heartbeat and respiration patterns.",short_introduction:"BioTag is an RFID dataset originally collected for continuous user authentication based on unique biometrics in human respiration patterns. This dataset contains RFID raw data samples collected from two RFID tags attached to the chest and abdomen of 41 participants."},
+
+     {class:'2',category:"WiFi", application:"User Authentication", src: "/medias/images/data&APIs/Algo_WiFi_Authentication1.png", date:'March 2023', href: "#",subtitle: "Physiological and Behavioral Feature Based User Authentication Inference Model",name:"WiFi",introduction:"Coming soon!"},
+    {class:'2',category:"WiFi", application:"User Authentication", src: "/medias/images/data&APIs/Algo_WiFi_Authentication2.png", date:'March 2023', href: "#",subtitle: "Environment-independent User Authentication Model",name:"WiFi",introduction:"Coming soon!"},
+    {class:'2',category:"WiFi", application:"Object Detection", src: "/medias/images/data&APIs/Algo_WiFi_object_detection.png", date:'February 2023', href: "#",subtitle: "Environment-independent In-baggage Object Detection Model",name:"WiFi",introduction:"Coming soon!"},
+ 
+    {class:'2',category:"WiFi", application:"Activity Recognition", src: "/medias/images/data&APIs/Algo_WiFi_Activity.png", date:'February 2023', href: "#",subtitle: "Eating Moment Activity Recognition Model",name:"WiFi",introduction:"Coming soon!"},
+     
+	{class:'2',category:"Vibration", application:"User Authentication", src: "/medias/images/data&APIs/Algo_Vibration.jpg", date:'February 2023', href: "#",subtitle: "Vibration-based Client Authentication",name:"Vibration",introduction:"Coming soon!"},
+	{class:'2',category:"mmWave", application:"Activity Recognition", src: "/medias/images/data&APIs/Algo_mmWave_Fitness.png", date:'December 2021', href: "#",subtitle: "MmWave-based Fitness Activity Recognition",name:"mmWave",introduction:"Coming soon!"},
+	{class:'2',category:"mmWave", application:"Activity Recognition", src: "/medias/images/data&APIs/Algo_mmWave_Eating.jpg", date:'December 2021', href: "#",subtitle: "MmWave-based Eating Activity Recognition",name:"mmWave",introduction:"Coming soon!"},
+	   
+    {class:'2',category:"RFID", application:"User Authentication", src: "/medias/images/data&APIs/Algo_RFID_Authentication.png", date:'July 2021', href: "#",subtitle: "RFID-based Continuous User Verification",name:"RFID Sensing",introduction:"Coming soon!"},
 	    ]
-        
+
+
  var article=document.getElementsByClassName("article")[0];
  var art = article.getElementsByTagName("Article")[0];
  var oUl=art.getElementsByClassName("col")[0];
@@ -476,6 +487,14 @@
  var btn = category.getElementsByClassName("btn");
  var app=document.getElementsByClassName("application")[0];
  var APP_oUl=app.getElementsByClassName("col")[0];
+
+//  var Algo_article=document.getElementsByClassName("article")[3];
+//  var Algo_art = Algo_article.getElementsByTagName("Article")[0];
+//  var Algo_oUl=Algo_art.getElementsByClassName("col")[0];
+//  var Algo_category=document.getElementsByClassName("categories")[0];
+//  var Algo_btn = Algo_category.getElementsByClassName("btn");
+//  var Algo_app=document.getElementsByClassName("application")[0];
+//  var Algo_APP_oUl=Algo_app.getElementsByClassName("col")[0];
 
  var state = {
     text: '',
@@ -525,23 +544,62 @@
         count_data+=1;                           
         console.log(oUl.innerHTML);
                                 }
-        if(ele.class=='2'&&(state_category=='All' ||state_category==ele.category || ele.application==state_category)){
-            count_app+=1;
-            console.log(count_app)
-            if (count_app%num_per_row==0){
-            oUl.innerHTML+='<div class="col m12 l12">'
-        }
 
-            APP_oUl.innerHTML+='                    <div class="article col s12 m6 l4" ><div class="article-badge left-badge text-color">&nbsp &nbsp<i class="category far fa-dot-circle"></i>&nbsp;'+
+        if(ele.class=='2'&&(state_category=='All' ||state_category==ele.category || ele.application==state_category)){
+            if (count_app%num_per_row==0){
+             APP_oUl.innerHTML+='<div class="col m12 l12">'
+            }  
+            APP_oUl.innerHTML+='                    <div class="article col s12 m6 l4" ><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
+            ele.category+'&nbsp &nbsp<i class="category far fa-dot-circle"></i>&nbsp;'+
             ele.application+
-            '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
-                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="margin-left:-9px;font-weight:600;margin-bottom:-12px;line-height:1.3">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
+                            '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
+                                ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="margin-left:-9px;font-weight:600;font-family:Poppins; margin-bottom:-12px;line-height:1.3；">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
                                     +ele.introduction+'</p></span></div></div></div></div>'
-                                    if (count_app%num_per_row==0){
+                                
+        if (count_data%num_per_row==0){
             oUl.innerHTML+='</div>'
         }
+        
+        count_app+=1;
         }
      });
+
+    // Algo_oUl.innerHTML = "";
+    // Algo_APP_oUl.innerHTML="";
+    // data.forEach(function (ele, index, self) {
+    //     console.log(window.innerWidth)
+    //     if (ele.class=='1' && (state_category=='All' || state_category==ele.category || ele.application==state_category)){
+            
+    //     //遍历数组里面的东西，取其中数据构建html结构，
+    //     if (count_data%num_per_row==0){
+    //         Algo_oUl.innerHTML+='<div class="col m12 l12">'
+    //     }
+    //     console.log(index)
+    //     if (ele.application=="User Authentication & Domain Adaptation"){
+    //         console.log('datat',index)
+    //         Algo_oUl.innerHTML+='                    <div class="article col s12 m6 l4" ><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
+    //         ele.category+'&nbsp &nbsp<i class="category far fa-dot-circle"></i>&nbsp;'+
+    //         ele.application+
+    //                         '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
+    //                             ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title-2" style="margin-left:-9px;font-weight:600;font-family:Poppins; margin-bottom:-16px;line-height:1.3；font-size:18px !important">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
+    //                                 +ele.introduction+'</p></span></div></div></div></div>'
+    //     }else{
+    //         Algo_oUl.innerHTML+='                    <div class="article col s12 m6 l4" ><div class="article-badge left-badge text-color"><i class="category far fa-dot-circle"></i>&nbsp;'+
+    //         ele.category+'&nbsp &nbsp<i class="category far fa-dot-circle"></i>&nbsp;'+
+    //         ele.application+
+    //                         '</div><div class="card"><a href="'+ele.href+'"><div class="card-image"><img src="'+
+    //                             ele.src+'" class="responsive-img" alt="Data&amp;APIs"><br><br><div class="card-title" style="margin-left:-9px;font-weight:600;font-family:Poppins; margin-bottom:-12px;line-height:1.3；">'+ele.name+': '+ele.subtitle+'</div></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info" style="margin-top: -10px;"><span><p class="Introduction" style="font-size:17px; opacity:0.78;line-height:1.2;">'
+    //                                 +ele.introduction+'</p></span></div></div></div></div>'
+    //                             }
+    //     if (count_data%num_per_row==0){
+    //         Algo_oUl.innerHTML+='</div>'
+    //     }
+        
+    //     count_data+=1;                           
+    //     console.log(oUl.innerHTML);
+    //                             }
+    //  });
+
 }
 window.addEventListener("resize", function () {
                 renderPage(arr, state.category);
@@ -670,7 +728,7 @@ function screenInput(data, value){
     <div class="col s12 m8 l8 copy-right center-align">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022-2024</span>
+                <span id="year">2022-2025</span>
             
             <a href="/index">Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</a>
             <br>
