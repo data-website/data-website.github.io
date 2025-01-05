@@ -1111,7 +1111,7 @@ article .card:hover{
 article .card {
     border-radius: 10px;
     overflow: hidden;
-    max-height: 380px;
+    max-height: 440px;
 }
 
 article .card-image {
