@@ -1102,7 +1102,7 @@ article a:hover {
 article .card:hover{
     border-radius: 10px;
     overflow: hidden;
-    max-height: 600px;
+    max-height: 700px;
     box-shadow: 4px 5px rgb(50 50 93 / 10%), 0 4px 5px rgb(0 0 0 / 7%) !important;
     transition: max-height 0.3s linear;
 }
@@ -1111,7 +1111,7 @@ article .card:hover{
 article .card {
     border-radius: 10px;
     overflow: hidden;
-    max-height: 440px;
+    max-height: 340px;
 }
 
 article .card-image {
