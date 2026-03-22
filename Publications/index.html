@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Our Website is online!, Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds">
-    <meta name="description" content="Our website has been deployed in Github. The master branch is the source code of this website and the gh-pages branch is">
+    <meta name="keywords" content="Publications, Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds">
+    <meta name="description" content="Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Our Website is online! | Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</title>
+    <title>Publications | Nation-wide Community-based Mobile Edge Sensing and Computing Testbeds</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -237,151 +237,357 @@
 
 </header>
     
+    
+    
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h4>Our Website is online!</h4>
+                    <h4>Publications</h4>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-<main class="container content">
-
     
-    <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
+    
+    
+    
+<section style="background-color: white;">
 
-            <div class="post-info">
-                
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
 
-                
-
-                
-
-                
-
-                
-            </div>
-        </div>
-        <hr class="clearfix">
-
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p>Our website has been deployed in <a target="_blank" rel="noopener" href="https://github.com/data-website/data-website.github.io">Github</a>. The master branch is the source code of this website and the gh-pages branch is the code that generated from Hexo. I suggest that you can download the code from master branch and upload on another branch that named by your school or your name.</p>
-<p>Our website is deployed in <a href="https://data-website.github.io/">https://data-website.github.io/</a>. Here are some introduction how to use this template.</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ul>
-<li><big>nodejs</big></li>
-</ul>
-<p><strong>The website to <a target="_blank" rel="noopener" href="https://nodejs.org/en/">download</a></strong></p>
-<ul>
-<li><big>hexo</big></li>
-</ul>
-<p><strong>Install hexo:</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="Create-in-local-path"><a href="#Create-in-local-path" class="headerlink" title="Create in local path"></a>Create in local path</h2><p>Create hexo template. Create a new folder, <code>cd</code> in this folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>To use our website source code, you can only download the code from <code>master</code> branch. change <strong>source, themes and _config.yml</strong> files.</p>
-<p>To check the website, run it in the local path.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>hexo will generate the static file in <code>public</code> folder, to change the generated file, we can revise file in <code>source</code> folder. Then, we run the bash:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp; hexo g</span><br></pre></td></tr></table></figure>
-
-<p><strong>run local server</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>if has error, run the bash:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure>
-
-<h2 id="Deploy-in-Github"><a href="#Deploy-in-Github" class="headerlink" title="Deploy in Github"></a>Deploy in Github</h2><p><strong>configure _config.yml</strong></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/data-website/data-website.github.io.git</span><br><span class="line">  branch: gh-pages # branch hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>Run the bash:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>Hexo will deploy all files in <code>public</code> folder to ph-pages branch. Then the website is deployed in <em>username.github.io</em></p>
-<h2 id="New-page"><a href="#New-page" class="headerlink" title="New page"></a>New page</h2><p>If the <code>source</code> directory doesn’t have this file, you need to create a new one like this:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">&quot;new page name&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>When editing new page file <em>index.md</em>, need to add something</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: new page name</span><br><span class="line">date: 2018-09-30 17:25:30</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;layout in theme&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Modify-Template"><a href="#Modify-Template" class="headerlink" title="Modify Template"></a>Modify Template</h2><blockquote>
-<p><strong>Note</strong>: </p>
-</blockquote>
-
-                
-            </div>
-
+<div class="papers">
+ 
+  <!-- 1 -->
+  <div class="paper">
+    <div class="num">01</div>
+    <div>
+      <div class="title">Passive Vital Sign Monitoring via Facial Vibrations Leveraging AR/VR Headsets</div>
+      <div class="meta">Zhang, Shi, Walker et al. · MobiSys 2023</div>
+    </div>
+    <a class="pdf-btn" href="https://par.nsf.gov/servlets/purl/10544122" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 2 -->
+  <div class="paper">
+    <div class="num">02</div>
+    <div>
+      <div class="title">Towards Contactless Human Concentration Monitoring Using mmWave Signals</div>
+      <div class="meta">Ge, Wei, Guo et al. · IEEE CIC 2024</div>
+    </div>
+    <a class="pdf-btn" href="https://www.winlab.rutgers.edu/~yychen/daisylab/papers/Towards%20Contactless%20Human%20Concentration%20Monitoring%20Using%20mmWave%20Signals.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 3 -->
+  <div class="paper">
+    <div class="num">03</div>
+    <div>
+      <div class="title">Universal Targeted Attacks Against mmWave-based Human Activity Recognition System</div>
+      <div class="meta">Xie, Jiang, Guo et al. · MobiSys 2022</div>
+      <a class="doi-link" href="https://doi.org/10.1145/3498361.3538774" target="_blank">doi.org/10.1145/3498361.3538774</a>
+    </div>
+    <div class="unavailable">No open PDF</div>
+  </div>
+ 
+  <!-- 4 -->
+  <div class="paper">
+    <div class="num">04</div>
+    <div>
+      <div class="title">Solving the WiFi Sensing Dilemma in Reality Leveraging Conformal Prediction</div>
+      <div class="meta">Wang, Shi, Cheng et al. · SenSys 2022</div>
+    </div>
+    <a class="pdf-btn" href="https://www.winlab.rutgers.edu/~yychen/papers/Solving%20the%20WiFi%20Sensing%20Dilemma%20in%20Reality%20Leveraging%20Conformal%20Prediction.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 5 -->
+  <div class="paper">
+    <div class="num">05</div>
+    <div>
+      <div class="title">BioCase: Privacy Protection via Acoustic Sensing of Finger Touches on Smartphone Case Mini-Structures</div>
+      <div class="meta">Yang, Li, Ye et al. · MobiSys 2023</div>
+    </div>
+    <a class="pdf-btn" href="https://eceweb1.rutgers.edu/~daisylab/papers/BioCase%20Privacy%20Protection%20via%20Acoustic%20Sensing%20of%20Finger%20Touches%20on%20Smartphone%20Case%20Mini-Structures.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 6 -->
+  <div class="paper">
+    <div class="num">06</div>
+    <div>
+      <div class="title">WatchID: Wearable Device Authentication via Reprogrammable Vibration</div>
+      <div class="meta">Cheng · MOBIQUITOUS 2021</div>
+      <a class="doi-link" href="https://doi.org/10.1007/978-3-030-94822-1" target="_blank">doi.org/10.1007/978-3-030-94822-1</a>
+    </div>
+    <div class="unavailable">No open PDF</div>
+  </div>
+ 
+  <!-- 7 -->
+  <div class="paper">
+    <div class="num">07</div>
+    <div>
+      <div class="title">Mobile App-based Study of Driving Behaviors Under the Influence of Cannabis</div>
+      <div class="meta">Li, Han, Shi et al. · Smart Health 2025</div>
+      <a class="doi-link" href="https://www.sciencedirect.com/journal/smart-health" target="_blank">Smart Health Journal</a>
+    </div>
+    <div class="unavailable">No open PDF</div>
+  </div>
+ 
+  <!-- 8 -->
+  <div class="paper">
+    <div class="num">08</div>
+    <div>
+      <div class="title">Defending against Thru-barrier Stealthy Voice Attacks via Cross-Domain Sensing on Phoneme Sounds</div>
+      <div class="meta">Shi, Zhao, Zhang et al. · ICDCS 2022</div>
+    </div>
+    <a class="pdf-btn" href="https://www.winlab.rutgers.edu/~yychen/daisylab/papers/Defending%20against%20Thru-barrier%20Stealthy%20Voice%20Attacks%20via%20Cross-Domain%20Sensing%20on%20Phoneme%20Sounds.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 9 -->
+  <div class="paper">
+    <div class="num">09</div>
+    <div>
+      <div class="title">mmFit: Low-Effort Personalized Fitness Monitoring Using Millimeter Wave</div>
+      <div class="meta">Xie, Jiang, Guo et al. · ICCCN 2022</div>
+    </div>
+    <a class="pdf-btn" href="https://eceweb1.rutgers.edu/~daisylab/papers/mmFit%20Low-Effort%20Personalized%20Fitness%20Monitoring%20Using%20Millimeter%20Wave.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 10 -->
+  <div class="paper">
+    <div class="num">10</div>
+    <div>
+      <div class="title">Secure and Efficient Mobile DNN Using Trusted Execution Environments</div>
+      <div class="meta">Hu, Wang, Cheng et al. · AsiaCCS 2023</div>
+      <a class="doi-link" href="https://doi.org/10.1145/3579856.3582820" target="_blank">doi.org/10.1145/3579856.3582820</a>
+    </div>
+    <div class="unavailable">No open PDF</div>
+  </div>
+ 
+  <!-- 11 -->
+  <div class="paper">
+    <div class="num">11</div>
+    <div>
+      <div class="title">A Survey of Deep Learning on Mobile Devices: Applications, Optimizations, Challenges, and Research Opportunities</div>
+      <div class="meta">Zhao, Xie, Wang et al. · Proceedings of the IEEE 2022</div>
+      <a class="doi-link" href="https://doi.org/10.1109/JPROC.2022.3153408" target="_blank">doi.org/10.1109/JPROC.2022.3153408</a>
+    </div>
+    <div class="unavailable">Institution access</div>
+  </div>
+ 
+  <!-- 12 -->
+  <div class="paper">
+    <div class="num">12</div>
+    <div>
+      <div class="title">BioTag: Robust RFID-based Continuous User Verification Using Physiological Features from Respiration</div>
+      <div class="meta">Hu, Wang, Cheng et al. · MobiHoc 2022</div>
+    </div>
+    <a class="pdf-btn" href="https://eceweb1.rutgers.edu/~daisylab/papers/BioTag%20Robust%20RFID-based%20Continuous%20User%20Verification%20Using%20Physiological%20Features%20from%20Respiration.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 13 -->
+  <div class="paper">
+    <div class="num">13</div>
+    <div>
+      <div class="title">EarCase: Sound Source Localization Leveraging Mini Acoustic Structure Equipped Phone Cases for Hearing-challenged People</div>
+      <div class="meta">Li, Yang, Ye et al. · MobiHoc 2023</div>
+    </div>
+    <a class="pdf-btn" href="https://eceweb1.rutgers.edu/~daisylab/papers/EarCase%20Sound%20Source%20Localization%20Leveraging%20Mini%20Acoustic%20Structure%20Equipped%20Phone%20Cases%20for%20Hearing-challenged%20People.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 14 -->
+  <div class="paper">
+    <div class="num">14</div>
+    <div>
+      <div class="title">mmPalm: Unlocking Ubiquitous User Authentication through Palm Recognition with mmWave Signals</div>
+      <div class="meta">Xie, Guo, Wang et al. · IEEE CNS 2024</div>
+    </div>
+    <a class="pdf-btn" href="https://www.winlab.rutgers.edu/~yychen/daisylab/papers/mmPalm%20Unlocking%20Ubiquitous%20User%20Authentication%20through%20Palm%20Recognition%20with%20mmWave%20Signals.pdf" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm.5 11.5v1h-1v-1h1zM8 9.5a.5.5 0 0 1-.5-.5V4.5a.5.5 0 0 1 1 0V9a.5.5 0 0 1-.5.5z"/></svg>
+      PDF
+    </a>
+  </div>
+ 
+  <!-- 15 -->
+  <div class="paper">
+    <div class="num">15</div>
+    <div>
+      <div class="title">Universal Targeted Adversarial Attacks Against mmWave-based Human Activity Recognition</div>
+      <div class="meta">Xie, Jiang, Guo et al. · INFOCOM 2023</div>
+      <a class="doi-link" href="https://doi.org/10.1109/INFOCOM53939.2023.10228887" target="_blank">doi.org/10.1109/INFOCOM53939.2023.10228887</a>
+    </div>
+    <div class="unavailable">No open PDF</div>
+  </div>
+ 
+</div>
+</div>
         </div>
     </div>
+    </section>
 
+<style>
+ 
+ 
+    .papers {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+ 
+    .paper {
+      border-bottom: 1px solid var(--border);
+      padding: 1.6rem 0;
+      display: grid;
+      grid-template-columns: 2.5rem 1fr auto;
+      gap: 0 1.2rem;
+      align-items: start;
+      transition: background 0.2s;
+    }
+ 
+    .paper:hover {
+      background: var(--surface);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      border-radius: 4px;
+    }
+ 
+    .num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      padding-top: 0.25rem;
+      letter-spacing: 0.05em;
+    }
+
+    .meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+      line-height: 1.4;
+    }
+ 
+    .pdf-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--accent-dim);
+      padding: 0.35rem 0.65rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      margin-top: 0.15rem;
+      transition: background 0.15s, color 0.15s;
+      flex-shrink: 0;
+    }
+ 
+    .pdf-btn:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+ 
+    .pdf-btn svg {
+      width: 11px;
+      height: 11px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+ 
+    .unavailable {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.65rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+      text-align: center;
+    }
+ 
+    .doi-link {
+      color: var(--muted);
+      font-size: 0.65rem;
+      font-family: 'IBM Plex Mono', monospace;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      display: block;
+      margin-top: 0.15rem;
+    }
+ 
+    .doi-link:hover { color: var(--text); }
+ 
+</style>
+
+
+<script>
+    var title_oUl=document.getElementsByClassName("title-left")[0];
+    if ((995<window.innerWidth && window.innerWidth<1182)||(600<window.innerWidth && window.innerWidth<800)){
+      console.log('1231')
+          title_oUl.innerHTML="";
+          title_oUl.innerHTML+="&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds"
+    }
+    if(window.innerWidth<601){
+      console.log(title_oUl.outerHTML);
+        title_oUl.outerHTML="<p class='title-left' style='font-size: 18px; margin-top:10px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;' id='title'>&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds</p>";
+      }
+    console.log(title_oUl)
+    function retitle(){
+        if ((995<window.innerWidth && window.innerWidth<1182) ||(600<window.innerWidth && window.innerWidth<800)){
+          title_oUl.innerHTML="";
+          title_oUl.innerHTML+="<span style='margin-top:-5px'>&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds<span>"
+     console.log('2')
+    }
+
+      if(window.innerWidth<601){
+        title_oUl.outerHTML='<p class="title-left" style="font-size: 18px; margin-top:12px;font-family: Arial, Helvetica, sans-serif;line-height: 1.1;float:right;" id="title">&nbsp Nation-wide Edge<br>&nbsp Data Sharing Testbeds</p>'
+      }
+
+    }
+    window.addEventListener("resize", function () {
+        console.log(window.innerWidth);
+                retitle();
+      }, false)
+  </script>
     
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-
-<!-- 代码语言 -->
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-
-    
-
-</main>
-
-
-
 
     <footer class="page-footer bg-color" >
     
